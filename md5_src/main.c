@@ -96,7 +96,8 @@ char		*take_text_from_file(int fd)
 
 int			main(int argc, char **argv)
 {
-	t_hash_info info;
+	t_hash_info 	info;
+	t_crypt_info	crypt_info;
 
 	info.flags = 0;
 	info.hashptr = 0;
@@ -105,9 +106,12 @@ int			main(int argc, char **argv)
 		ft_printf(USAGE_STRING);
 	else
 	{
-		if (!(info.hashptr = find_hash_type(argv[1])))
+		if (!(info.hashptr = find_hash_type(argv[1])) &&
+			!crypt_info.cryptptr = find_crypt_type(argv[1]))
 			return (print_error(0, error_command, *argv));
 		argv = argv + 2;
+		if (!crypt_info.cryptptr)
+
 		if (*argv == NULL)
 			return (read_hash_info(&info, STDIN, 1));
 		while (*argv && (*argv)[0] == '-')

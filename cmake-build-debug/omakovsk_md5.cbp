@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="omakovsk_md5"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/developer/Desktop/omakovsk_md5/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/Users/developer/Desktop/omakovsk_md5/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/developer/Desktop/omakovsk_md5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/Users/developer/Desktop/omakovsk_md5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/developer/Desktop/omakovsk_md5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/developer/Desktop/omakovsk_md5/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/Users/developer/Desktop/omakovsk_md5/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/developer/Desktop/omakovsk_md5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/Users/developer/Desktop/omakovsk_md5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/developer/Desktop/omakovsk_md5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/developer/Desktop/omakovsk_md5/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/Users/developer/Desktop/omakovsk_md5/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/developer/Desktop/omakovsk_md5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/Users/developer/Desktop/omakovsk_md5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/developer/Desktop/omakovsk_md5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ft_ssl">
+				<Option output="/Users/developer/Desktop/omakovsk_md5/cmake-build-debug/ft_ssl" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/developer/Desktop/omakovsk_md5/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/developer/Desktop/omakovsk_md5/libft"/>
+					<Add directory="/Users/developer/Desktop/omakovsk_md5/md5_src"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/Users/developer/Desktop/omakovsk_md5/cmake-build-debug/Makefile&quot;  VERBOSE=1 ft_ssl"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/developer/Desktop/omakovsk_md5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/Users/developer/Desktop/omakovsk_md5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/developer/Desktop/omakovsk_md5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ft_ssl/fast">
+				<Option output="/Users/developer/Desktop/omakovsk_md5/cmake-build-debug/ft_ssl" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/developer/Desktop/omakovsk_md5/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/developer/Desktop/omakovsk_md5/libft"/>
+					<Add directory="/Users/developer/Desktop/omakovsk_md5/md5_src"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/Users/developer/Desktop/omakovsk_md5/cmake-build-debug/Makefile&quot;  VERBOSE=1 ft_ssl/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/developer/Desktop/omakovsk_md5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/Users/developer/Desktop/omakovsk_md5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/developer/Desktop/omakovsk_md5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/check_c_conv.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/check_char.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/check_conversion.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/check_digit_conv.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/check_flags.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/check_inv_char.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/check_min_width.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/check_octhex_conv.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/check_precision.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/check_s_conv.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/check_size_spec.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/count_precision.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_atoi.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_bzero.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_get_next_line.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_isalnum.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_isalpha.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_isascii.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_isdigit.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_isprint.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_itoa.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_lstadd.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_lstdel.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_lstdelone.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_lstiter.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_lstmap.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_lstnew.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_memalloc.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_memccpy.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_memchr.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_memcmp.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_memcpy.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_memdel.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_memmove.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_memset.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_mycount_words.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_myfactor.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_myintiter.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_mypower.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_myrev.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_printf.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_prnt_add_zero.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_prnt_addsharp.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_prnt_bgsharp.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_prnt_itoa_intmax.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_prnt_itoa_sizet.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_prnt_itoa_uintmax.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_prnt_itoall.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_prnt_itoas.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_prnt_itoaui.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_prnt_itoaui_octhex.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_prnt_itoauimax_octhex.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_prnt_itoaull.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_prnt_itoaull_octhex.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_prnt_itoaus.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_prnt_itoaus_octhex.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_prnt_memmaloc.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_prnt_prs_str.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_prnt_replace_spc.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_prnt_sharp_p.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_prnt_smsharp.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_prnt_space_flag.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_prnt_strjoin_prsn.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_prnt_strjoin_smb.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_prnt_strjoin_width.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_prnt_strstr.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_putchar.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_putchar_fd.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_putendl.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_putendl_fd.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_putnbr.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_putnbr_fd.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_putstr.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_putstr_fd.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_strcat.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_strchr.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_strclr.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_strcmp.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_strcpy.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_strdel.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_strdup.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_strequ.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_striter.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_striteri.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_strjoin.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_strlcat.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_strlen.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_strmap.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_strmapi.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_strncat.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_strncmp.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_strncpy.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_strnequ.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_strnew.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_strnstr.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_strrchr.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_strsplit.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_strstr.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_strsub.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_strtrim.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_tolower.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/ft_toupper.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/libft.h">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/make_minus_flag.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/make_plus_flag.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/make_sharp_flag.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/make_space_flag.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/make_zero_flag.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/print_unicode.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/read_unicode_string.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/size_spec_h.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/size_spec_hh.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/size_spec_j.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/size_spec_l.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/size_spec_ll.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/size_spec_z.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/use_ss_long.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/libft/use_ss_short.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/md5_src/ft_global.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/md5_src/ft_global.h">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/md5_src/ft_init_structs.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/md5_src/ft_main_hash_function.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/md5_src/ft_md5.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/md5_src/ft_md5.h">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/md5_src/ft_md5_instead_def.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/md5_src/ft_md5_rounds.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/md5_src/ft_parse_and_read.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/md5_src/ft_parse_and_read.h">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/md5_src/ft_sha.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/md5_src/ft_sha.h">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/md5_src/ft_sha_384_512.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/md5_src/ft_sha_helpers.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/md5_src/init_start_words.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/md5_src/main.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/developer/Desktop/omakovsk_md5/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
