@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Volumes/CLion/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /Volumes/CLion/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/developer/Desktop/omakovsk_md5
+CMAKE_SOURCE_DIR = /Users/omakovsk/Documents/ft_ssl
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/developer/Desktop/omakovsk_md5/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/omakovsk/Documents/ft_ssl/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/developer/Desktop/omakovsk_md5/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Volumes/CLion/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Volumes/CLion/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/developer/Desktop/omakovsk_md5/cmake-build-debug/CMakeFiles /Users/developer/Desktop/omakovsk_md5/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/omakovsk/Documents/ft_ssl/cmake-build-debug/CMakeFiles /Users/omakovsk/Documents/ft_ssl/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/developer/Desktop/omakovsk_md5/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/omakovsk/Documents/ft_ssl/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,6 +122,330 @@ ft_ssl: cmake_check_build_system
 ft_ssl/fast:
 	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/build
 .PHONY : ft_ssl/fast
+
+hash_src/ft_global.o: hash_src/ft_global.c.o
+
+.PHONY : hash_src/ft_global.o
+
+# target to build an object file
+hash_src/ft_global.c.o:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/hash_src/ft_global.c.o
+.PHONY : hash_src/ft_global.c.o
+
+hash_src/ft_global.i: hash_src/ft_global.c.i
+
+.PHONY : hash_src/ft_global.i
+
+# target to preprocess a source file
+hash_src/ft_global.c.i:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/hash_src/ft_global.c.i
+.PHONY : hash_src/ft_global.c.i
+
+hash_src/ft_global.s: hash_src/ft_global.c.s
+
+.PHONY : hash_src/ft_global.s
+
+# target to generate assembly for a file
+hash_src/ft_global.c.s:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/hash_src/ft_global.c.s
+.PHONY : hash_src/ft_global.c.s
+
+hash_src/ft_init_structs.o: hash_src/ft_init_structs.c.o
+
+.PHONY : hash_src/ft_init_structs.o
+
+# target to build an object file
+hash_src/ft_init_structs.c.o:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/hash_src/ft_init_structs.c.o
+.PHONY : hash_src/ft_init_structs.c.o
+
+hash_src/ft_init_structs.i: hash_src/ft_init_structs.c.i
+
+.PHONY : hash_src/ft_init_structs.i
+
+# target to preprocess a source file
+hash_src/ft_init_structs.c.i:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/hash_src/ft_init_structs.c.i
+.PHONY : hash_src/ft_init_structs.c.i
+
+hash_src/ft_init_structs.s: hash_src/ft_init_structs.c.s
+
+.PHONY : hash_src/ft_init_structs.s
+
+# target to generate assembly for a file
+hash_src/ft_init_structs.c.s:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/hash_src/ft_init_structs.c.s
+.PHONY : hash_src/ft_init_structs.c.s
+
+hash_src/ft_main_hash_function.o: hash_src/ft_main_hash_function.c.o
+
+.PHONY : hash_src/ft_main_hash_function.o
+
+# target to build an object file
+hash_src/ft_main_hash_function.c.o:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/hash_src/ft_main_hash_function.c.o
+.PHONY : hash_src/ft_main_hash_function.c.o
+
+hash_src/ft_main_hash_function.i: hash_src/ft_main_hash_function.c.i
+
+.PHONY : hash_src/ft_main_hash_function.i
+
+# target to preprocess a source file
+hash_src/ft_main_hash_function.c.i:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/hash_src/ft_main_hash_function.c.i
+.PHONY : hash_src/ft_main_hash_function.c.i
+
+hash_src/ft_main_hash_function.s: hash_src/ft_main_hash_function.c.s
+
+.PHONY : hash_src/ft_main_hash_function.s
+
+# target to generate assembly for a file
+hash_src/ft_main_hash_function.c.s:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/hash_src/ft_main_hash_function.c.s
+.PHONY : hash_src/ft_main_hash_function.c.s
+
+hash_src/ft_md5.o: hash_src/ft_md5.c.o
+
+.PHONY : hash_src/ft_md5.o
+
+# target to build an object file
+hash_src/ft_md5.c.o:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/hash_src/ft_md5.c.o
+.PHONY : hash_src/ft_md5.c.o
+
+hash_src/ft_md5.i: hash_src/ft_md5.c.i
+
+.PHONY : hash_src/ft_md5.i
+
+# target to preprocess a source file
+hash_src/ft_md5.c.i:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/hash_src/ft_md5.c.i
+.PHONY : hash_src/ft_md5.c.i
+
+hash_src/ft_md5.s: hash_src/ft_md5.c.s
+
+.PHONY : hash_src/ft_md5.s
+
+# target to generate assembly for a file
+hash_src/ft_md5.c.s:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/hash_src/ft_md5.c.s
+.PHONY : hash_src/ft_md5.c.s
+
+hash_src/ft_md5_instead_def.o: hash_src/ft_md5_instead_def.c.o
+
+.PHONY : hash_src/ft_md5_instead_def.o
+
+# target to build an object file
+hash_src/ft_md5_instead_def.c.o:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/hash_src/ft_md5_instead_def.c.o
+.PHONY : hash_src/ft_md5_instead_def.c.o
+
+hash_src/ft_md5_instead_def.i: hash_src/ft_md5_instead_def.c.i
+
+.PHONY : hash_src/ft_md5_instead_def.i
+
+# target to preprocess a source file
+hash_src/ft_md5_instead_def.c.i:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/hash_src/ft_md5_instead_def.c.i
+.PHONY : hash_src/ft_md5_instead_def.c.i
+
+hash_src/ft_md5_instead_def.s: hash_src/ft_md5_instead_def.c.s
+
+.PHONY : hash_src/ft_md5_instead_def.s
+
+# target to generate assembly for a file
+hash_src/ft_md5_instead_def.c.s:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/hash_src/ft_md5_instead_def.c.s
+.PHONY : hash_src/ft_md5_instead_def.c.s
+
+hash_src/ft_md5_rounds.o: hash_src/ft_md5_rounds.c.o
+
+.PHONY : hash_src/ft_md5_rounds.o
+
+# target to build an object file
+hash_src/ft_md5_rounds.c.o:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/hash_src/ft_md5_rounds.c.o
+.PHONY : hash_src/ft_md5_rounds.c.o
+
+hash_src/ft_md5_rounds.i: hash_src/ft_md5_rounds.c.i
+
+.PHONY : hash_src/ft_md5_rounds.i
+
+# target to preprocess a source file
+hash_src/ft_md5_rounds.c.i:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/hash_src/ft_md5_rounds.c.i
+.PHONY : hash_src/ft_md5_rounds.c.i
+
+hash_src/ft_md5_rounds.s: hash_src/ft_md5_rounds.c.s
+
+.PHONY : hash_src/ft_md5_rounds.s
+
+# target to generate assembly for a file
+hash_src/ft_md5_rounds.c.s:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/hash_src/ft_md5_rounds.c.s
+.PHONY : hash_src/ft_md5_rounds.c.s
+
+hash_src/ft_parse_and_read.o: hash_src/ft_parse_and_read.c.o
+
+.PHONY : hash_src/ft_parse_and_read.o
+
+# target to build an object file
+hash_src/ft_parse_and_read.c.o:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/hash_src/ft_parse_and_read.c.o
+.PHONY : hash_src/ft_parse_and_read.c.o
+
+hash_src/ft_parse_and_read.i: hash_src/ft_parse_and_read.c.i
+
+.PHONY : hash_src/ft_parse_and_read.i
+
+# target to preprocess a source file
+hash_src/ft_parse_and_read.c.i:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/hash_src/ft_parse_and_read.c.i
+.PHONY : hash_src/ft_parse_and_read.c.i
+
+hash_src/ft_parse_and_read.s: hash_src/ft_parse_and_read.c.s
+
+.PHONY : hash_src/ft_parse_and_read.s
+
+# target to generate assembly for a file
+hash_src/ft_parse_and_read.c.s:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/hash_src/ft_parse_and_read.c.s
+.PHONY : hash_src/ft_parse_and_read.c.s
+
+hash_src/ft_sha.o: hash_src/ft_sha.c.o
+
+.PHONY : hash_src/ft_sha.o
+
+# target to build an object file
+hash_src/ft_sha.c.o:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/hash_src/ft_sha.c.o
+.PHONY : hash_src/ft_sha.c.o
+
+hash_src/ft_sha.i: hash_src/ft_sha.c.i
+
+.PHONY : hash_src/ft_sha.i
+
+# target to preprocess a source file
+hash_src/ft_sha.c.i:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/hash_src/ft_sha.c.i
+.PHONY : hash_src/ft_sha.c.i
+
+hash_src/ft_sha.s: hash_src/ft_sha.c.s
+
+.PHONY : hash_src/ft_sha.s
+
+# target to generate assembly for a file
+hash_src/ft_sha.c.s:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/hash_src/ft_sha.c.s
+.PHONY : hash_src/ft_sha.c.s
+
+hash_src/ft_sha_384_512.o: hash_src/ft_sha_384_512.c.o
+
+.PHONY : hash_src/ft_sha_384_512.o
+
+# target to build an object file
+hash_src/ft_sha_384_512.c.o:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/hash_src/ft_sha_384_512.c.o
+.PHONY : hash_src/ft_sha_384_512.c.o
+
+hash_src/ft_sha_384_512.i: hash_src/ft_sha_384_512.c.i
+
+.PHONY : hash_src/ft_sha_384_512.i
+
+# target to preprocess a source file
+hash_src/ft_sha_384_512.c.i:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/hash_src/ft_sha_384_512.c.i
+.PHONY : hash_src/ft_sha_384_512.c.i
+
+hash_src/ft_sha_384_512.s: hash_src/ft_sha_384_512.c.s
+
+.PHONY : hash_src/ft_sha_384_512.s
+
+# target to generate assembly for a file
+hash_src/ft_sha_384_512.c.s:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/hash_src/ft_sha_384_512.c.s
+.PHONY : hash_src/ft_sha_384_512.c.s
+
+hash_src/ft_sha_helpers.o: hash_src/ft_sha_helpers.c.o
+
+.PHONY : hash_src/ft_sha_helpers.o
+
+# target to build an object file
+hash_src/ft_sha_helpers.c.o:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/hash_src/ft_sha_helpers.c.o
+.PHONY : hash_src/ft_sha_helpers.c.o
+
+hash_src/ft_sha_helpers.i: hash_src/ft_sha_helpers.c.i
+
+.PHONY : hash_src/ft_sha_helpers.i
+
+# target to preprocess a source file
+hash_src/ft_sha_helpers.c.i:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/hash_src/ft_sha_helpers.c.i
+.PHONY : hash_src/ft_sha_helpers.c.i
+
+hash_src/ft_sha_helpers.s: hash_src/ft_sha_helpers.c.s
+
+.PHONY : hash_src/ft_sha_helpers.s
+
+# target to generate assembly for a file
+hash_src/ft_sha_helpers.c.s:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/hash_src/ft_sha_helpers.c.s
+.PHONY : hash_src/ft_sha_helpers.c.s
+
+hash_src/init_start_words.o: hash_src/init_start_words.c.o
+
+.PHONY : hash_src/init_start_words.o
+
+# target to build an object file
+hash_src/init_start_words.c.o:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/hash_src/init_start_words.c.o
+.PHONY : hash_src/init_start_words.c.o
+
+hash_src/init_start_words.i: hash_src/init_start_words.c.i
+
+.PHONY : hash_src/init_start_words.i
+
+# target to preprocess a source file
+hash_src/init_start_words.c.i:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/hash_src/init_start_words.c.i
+.PHONY : hash_src/init_start_words.c.i
+
+hash_src/init_start_words.s: hash_src/init_start_words.c.s
+
+.PHONY : hash_src/init_start_words.s
+
+# target to generate assembly for a file
+hash_src/init_start_words.c.s:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/hash_src/init_start_words.c.s
+.PHONY : hash_src/init_start_words.c.s
+
+hash_src/main.o: hash_src/main.c.o
+
+.PHONY : hash_src/main.o
+
+# target to build an object file
+hash_src/main.c.o:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/hash_src/main.c.o
+.PHONY : hash_src/main.c.o
+
+hash_src/main.i: hash_src/main.c.i
+
+.PHONY : hash_src/main.i
+
+# target to preprocess a source file
+hash_src/main.c.i:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/hash_src/main.c.i
+.PHONY : hash_src/main.c.i
+
+hash_src/main.s: hash_src/main.c.s
+
+.PHONY : hash_src/main.s
+
+# target to generate assembly for a file
+hash_src/main.c.s:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/hash_src/main.c.s
+.PHONY : hash_src/main.c.s
 
 libft/check_c_conv.o: libft/check_c_conv.c.o
 
@@ -3282,330 +3606,6 @@ libft/use_ss_short.c.s:
 	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/libft/use_ss_short.c.s
 .PHONY : libft/use_ss_short.c.s
 
-md5_src/ft_global.o: md5_src/ft_global.c.o
-
-.PHONY : md5_src/ft_global.o
-
-# target to build an object file
-md5_src/ft_global.c.o:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/md5_src/ft_global.c.o
-.PHONY : md5_src/ft_global.c.o
-
-md5_src/ft_global.i: md5_src/ft_global.c.i
-
-.PHONY : md5_src/ft_global.i
-
-# target to preprocess a source file
-md5_src/ft_global.c.i:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/md5_src/ft_global.c.i
-.PHONY : md5_src/ft_global.c.i
-
-md5_src/ft_global.s: md5_src/ft_global.c.s
-
-.PHONY : md5_src/ft_global.s
-
-# target to generate assembly for a file
-md5_src/ft_global.c.s:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/md5_src/ft_global.c.s
-.PHONY : md5_src/ft_global.c.s
-
-md5_src/ft_init_structs.o: md5_src/ft_init_structs.c.o
-
-.PHONY : md5_src/ft_init_structs.o
-
-# target to build an object file
-md5_src/ft_init_structs.c.o:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/md5_src/ft_init_structs.c.o
-.PHONY : md5_src/ft_init_structs.c.o
-
-md5_src/ft_init_structs.i: md5_src/ft_init_structs.c.i
-
-.PHONY : md5_src/ft_init_structs.i
-
-# target to preprocess a source file
-md5_src/ft_init_structs.c.i:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/md5_src/ft_init_structs.c.i
-.PHONY : md5_src/ft_init_structs.c.i
-
-md5_src/ft_init_structs.s: md5_src/ft_init_structs.c.s
-
-.PHONY : md5_src/ft_init_structs.s
-
-# target to generate assembly for a file
-md5_src/ft_init_structs.c.s:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/md5_src/ft_init_structs.c.s
-.PHONY : md5_src/ft_init_structs.c.s
-
-md5_src/ft_main_hash_function.o: md5_src/ft_main_hash_function.c.o
-
-.PHONY : md5_src/ft_main_hash_function.o
-
-# target to build an object file
-md5_src/ft_main_hash_function.c.o:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/md5_src/ft_main_hash_function.c.o
-.PHONY : md5_src/ft_main_hash_function.c.o
-
-md5_src/ft_main_hash_function.i: md5_src/ft_main_hash_function.c.i
-
-.PHONY : md5_src/ft_main_hash_function.i
-
-# target to preprocess a source file
-md5_src/ft_main_hash_function.c.i:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/md5_src/ft_main_hash_function.c.i
-.PHONY : md5_src/ft_main_hash_function.c.i
-
-md5_src/ft_main_hash_function.s: md5_src/ft_main_hash_function.c.s
-
-.PHONY : md5_src/ft_main_hash_function.s
-
-# target to generate assembly for a file
-md5_src/ft_main_hash_function.c.s:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/md5_src/ft_main_hash_function.c.s
-.PHONY : md5_src/ft_main_hash_function.c.s
-
-md5_src/ft_md5.o: md5_src/ft_md5.c.o
-
-.PHONY : md5_src/ft_md5.o
-
-# target to build an object file
-md5_src/ft_md5.c.o:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/md5_src/ft_md5.c.o
-.PHONY : md5_src/ft_md5.c.o
-
-md5_src/ft_md5.i: md5_src/ft_md5.c.i
-
-.PHONY : md5_src/ft_md5.i
-
-# target to preprocess a source file
-md5_src/ft_md5.c.i:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/md5_src/ft_md5.c.i
-.PHONY : md5_src/ft_md5.c.i
-
-md5_src/ft_md5.s: md5_src/ft_md5.c.s
-
-.PHONY : md5_src/ft_md5.s
-
-# target to generate assembly for a file
-md5_src/ft_md5.c.s:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/md5_src/ft_md5.c.s
-.PHONY : md5_src/ft_md5.c.s
-
-md5_src/ft_md5_instead_def.o: md5_src/ft_md5_instead_def.c.o
-
-.PHONY : md5_src/ft_md5_instead_def.o
-
-# target to build an object file
-md5_src/ft_md5_instead_def.c.o:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/md5_src/ft_md5_instead_def.c.o
-.PHONY : md5_src/ft_md5_instead_def.c.o
-
-md5_src/ft_md5_instead_def.i: md5_src/ft_md5_instead_def.c.i
-
-.PHONY : md5_src/ft_md5_instead_def.i
-
-# target to preprocess a source file
-md5_src/ft_md5_instead_def.c.i:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/md5_src/ft_md5_instead_def.c.i
-.PHONY : md5_src/ft_md5_instead_def.c.i
-
-md5_src/ft_md5_instead_def.s: md5_src/ft_md5_instead_def.c.s
-
-.PHONY : md5_src/ft_md5_instead_def.s
-
-# target to generate assembly for a file
-md5_src/ft_md5_instead_def.c.s:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/md5_src/ft_md5_instead_def.c.s
-.PHONY : md5_src/ft_md5_instead_def.c.s
-
-md5_src/ft_md5_rounds.o: md5_src/ft_md5_rounds.c.o
-
-.PHONY : md5_src/ft_md5_rounds.o
-
-# target to build an object file
-md5_src/ft_md5_rounds.c.o:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/md5_src/ft_md5_rounds.c.o
-.PHONY : md5_src/ft_md5_rounds.c.o
-
-md5_src/ft_md5_rounds.i: md5_src/ft_md5_rounds.c.i
-
-.PHONY : md5_src/ft_md5_rounds.i
-
-# target to preprocess a source file
-md5_src/ft_md5_rounds.c.i:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/md5_src/ft_md5_rounds.c.i
-.PHONY : md5_src/ft_md5_rounds.c.i
-
-md5_src/ft_md5_rounds.s: md5_src/ft_md5_rounds.c.s
-
-.PHONY : md5_src/ft_md5_rounds.s
-
-# target to generate assembly for a file
-md5_src/ft_md5_rounds.c.s:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/md5_src/ft_md5_rounds.c.s
-.PHONY : md5_src/ft_md5_rounds.c.s
-
-md5_src/ft_parse_and_read.o: md5_src/ft_parse_and_read.c.o
-
-.PHONY : md5_src/ft_parse_and_read.o
-
-# target to build an object file
-md5_src/ft_parse_and_read.c.o:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/md5_src/ft_parse_and_read.c.o
-.PHONY : md5_src/ft_parse_and_read.c.o
-
-md5_src/ft_parse_and_read.i: md5_src/ft_parse_and_read.c.i
-
-.PHONY : md5_src/ft_parse_and_read.i
-
-# target to preprocess a source file
-md5_src/ft_parse_and_read.c.i:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/md5_src/ft_parse_and_read.c.i
-.PHONY : md5_src/ft_parse_and_read.c.i
-
-md5_src/ft_parse_and_read.s: md5_src/ft_parse_and_read.c.s
-
-.PHONY : md5_src/ft_parse_and_read.s
-
-# target to generate assembly for a file
-md5_src/ft_parse_and_read.c.s:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/md5_src/ft_parse_and_read.c.s
-.PHONY : md5_src/ft_parse_and_read.c.s
-
-md5_src/ft_sha.o: md5_src/ft_sha.c.o
-
-.PHONY : md5_src/ft_sha.o
-
-# target to build an object file
-md5_src/ft_sha.c.o:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/md5_src/ft_sha.c.o
-.PHONY : md5_src/ft_sha.c.o
-
-md5_src/ft_sha.i: md5_src/ft_sha.c.i
-
-.PHONY : md5_src/ft_sha.i
-
-# target to preprocess a source file
-md5_src/ft_sha.c.i:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/md5_src/ft_sha.c.i
-.PHONY : md5_src/ft_sha.c.i
-
-md5_src/ft_sha.s: md5_src/ft_sha.c.s
-
-.PHONY : md5_src/ft_sha.s
-
-# target to generate assembly for a file
-md5_src/ft_sha.c.s:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/md5_src/ft_sha.c.s
-.PHONY : md5_src/ft_sha.c.s
-
-md5_src/ft_sha_384_512.o: md5_src/ft_sha_384_512.c.o
-
-.PHONY : md5_src/ft_sha_384_512.o
-
-# target to build an object file
-md5_src/ft_sha_384_512.c.o:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/md5_src/ft_sha_384_512.c.o
-.PHONY : md5_src/ft_sha_384_512.c.o
-
-md5_src/ft_sha_384_512.i: md5_src/ft_sha_384_512.c.i
-
-.PHONY : md5_src/ft_sha_384_512.i
-
-# target to preprocess a source file
-md5_src/ft_sha_384_512.c.i:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/md5_src/ft_sha_384_512.c.i
-.PHONY : md5_src/ft_sha_384_512.c.i
-
-md5_src/ft_sha_384_512.s: md5_src/ft_sha_384_512.c.s
-
-.PHONY : md5_src/ft_sha_384_512.s
-
-# target to generate assembly for a file
-md5_src/ft_sha_384_512.c.s:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/md5_src/ft_sha_384_512.c.s
-.PHONY : md5_src/ft_sha_384_512.c.s
-
-md5_src/ft_sha_helpers.o: md5_src/ft_sha_helpers.c.o
-
-.PHONY : md5_src/ft_sha_helpers.o
-
-# target to build an object file
-md5_src/ft_sha_helpers.c.o:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/md5_src/ft_sha_helpers.c.o
-.PHONY : md5_src/ft_sha_helpers.c.o
-
-md5_src/ft_sha_helpers.i: md5_src/ft_sha_helpers.c.i
-
-.PHONY : md5_src/ft_sha_helpers.i
-
-# target to preprocess a source file
-md5_src/ft_sha_helpers.c.i:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/md5_src/ft_sha_helpers.c.i
-.PHONY : md5_src/ft_sha_helpers.c.i
-
-md5_src/ft_sha_helpers.s: md5_src/ft_sha_helpers.c.s
-
-.PHONY : md5_src/ft_sha_helpers.s
-
-# target to generate assembly for a file
-md5_src/ft_sha_helpers.c.s:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/md5_src/ft_sha_helpers.c.s
-.PHONY : md5_src/ft_sha_helpers.c.s
-
-md5_src/init_start_words.o: md5_src/init_start_words.c.o
-
-.PHONY : md5_src/init_start_words.o
-
-# target to build an object file
-md5_src/init_start_words.c.o:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/md5_src/init_start_words.c.o
-.PHONY : md5_src/init_start_words.c.o
-
-md5_src/init_start_words.i: md5_src/init_start_words.c.i
-
-.PHONY : md5_src/init_start_words.i
-
-# target to preprocess a source file
-md5_src/init_start_words.c.i:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/md5_src/init_start_words.c.i
-.PHONY : md5_src/init_start_words.c.i
-
-md5_src/init_start_words.s: md5_src/init_start_words.c.s
-
-.PHONY : md5_src/init_start_words.s
-
-# target to generate assembly for a file
-md5_src/init_start_words.c.s:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/md5_src/init_start_words.c.s
-.PHONY : md5_src/init_start_words.c.s
-
-md5_src/main.o: md5_src/main.c.o
-
-.PHONY : md5_src/main.o
-
-# target to build an object file
-md5_src/main.c.o:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/md5_src/main.c.o
-.PHONY : md5_src/main.c.o
-
-md5_src/main.i: md5_src/main.c.i
-
-.PHONY : md5_src/main.i
-
-# target to preprocess a source file
-md5_src/main.c.i:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/md5_src/main.c.i
-.PHONY : md5_src/main.c.i
-
-md5_src/main.s: md5_src/main.c.s
-
-.PHONY : md5_src/main.s
-
-# target to generate assembly for a file
-md5_src/main.c.s:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/md5_src/main.c.s
-.PHONY : md5_src/main.c.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -3615,6 +3615,42 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ft_ssl"
+	@echo "... hash_src/ft_global.o"
+	@echo "... hash_src/ft_global.i"
+	@echo "... hash_src/ft_global.s"
+	@echo "... hash_src/ft_init_structs.o"
+	@echo "... hash_src/ft_init_structs.i"
+	@echo "... hash_src/ft_init_structs.s"
+	@echo "... hash_src/ft_main_hash_function.o"
+	@echo "... hash_src/ft_main_hash_function.i"
+	@echo "... hash_src/ft_main_hash_function.s"
+	@echo "... hash_src/ft_md5.o"
+	@echo "... hash_src/ft_md5.i"
+	@echo "... hash_src/ft_md5.s"
+	@echo "... hash_src/ft_md5_instead_def.o"
+	@echo "... hash_src/ft_md5_instead_def.i"
+	@echo "... hash_src/ft_md5_instead_def.s"
+	@echo "... hash_src/ft_md5_rounds.o"
+	@echo "... hash_src/ft_md5_rounds.i"
+	@echo "... hash_src/ft_md5_rounds.s"
+	@echo "... hash_src/ft_parse_and_read.o"
+	@echo "... hash_src/ft_parse_and_read.i"
+	@echo "... hash_src/ft_parse_and_read.s"
+	@echo "... hash_src/ft_sha.o"
+	@echo "... hash_src/ft_sha.i"
+	@echo "... hash_src/ft_sha.s"
+	@echo "... hash_src/ft_sha_384_512.o"
+	@echo "... hash_src/ft_sha_384_512.i"
+	@echo "... hash_src/ft_sha_384_512.s"
+	@echo "... hash_src/ft_sha_helpers.o"
+	@echo "... hash_src/ft_sha_helpers.i"
+	@echo "... hash_src/ft_sha_helpers.s"
+	@echo "... hash_src/init_start_words.o"
+	@echo "... hash_src/init_start_words.i"
+	@echo "... hash_src/init_start_words.s"
+	@echo "... hash_src/main.o"
+	@echo "... hash_src/main.i"
+	@echo "... hash_src/main.s"
 	@echo "... libft/check_c_conv.o"
 	@echo "... libft/check_c_conv.i"
 	@echo "... libft/check_c_conv.s"
@@ -3966,42 +4002,6 @@ help:
 	@echo "... libft/use_ss_short.o"
 	@echo "... libft/use_ss_short.i"
 	@echo "... libft/use_ss_short.s"
-	@echo "... md5_src/ft_global.o"
-	@echo "... md5_src/ft_global.i"
-	@echo "... md5_src/ft_global.s"
-	@echo "... md5_src/ft_init_structs.o"
-	@echo "... md5_src/ft_init_structs.i"
-	@echo "... md5_src/ft_init_structs.s"
-	@echo "... md5_src/ft_main_hash_function.o"
-	@echo "... md5_src/ft_main_hash_function.i"
-	@echo "... md5_src/ft_main_hash_function.s"
-	@echo "... md5_src/ft_md5.o"
-	@echo "... md5_src/ft_md5.i"
-	@echo "... md5_src/ft_md5.s"
-	@echo "... md5_src/ft_md5_instead_def.o"
-	@echo "... md5_src/ft_md5_instead_def.i"
-	@echo "... md5_src/ft_md5_instead_def.s"
-	@echo "... md5_src/ft_md5_rounds.o"
-	@echo "... md5_src/ft_md5_rounds.i"
-	@echo "... md5_src/ft_md5_rounds.s"
-	@echo "... md5_src/ft_parse_and_read.o"
-	@echo "... md5_src/ft_parse_and_read.i"
-	@echo "... md5_src/ft_parse_and_read.s"
-	@echo "... md5_src/ft_sha.o"
-	@echo "... md5_src/ft_sha.i"
-	@echo "... md5_src/ft_sha.s"
-	@echo "... md5_src/ft_sha_384_512.o"
-	@echo "... md5_src/ft_sha_384_512.i"
-	@echo "... md5_src/ft_sha_384_512.s"
-	@echo "... md5_src/ft_sha_helpers.o"
-	@echo "... md5_src/ft_sha_helpers.i"
-	@echo "... md5_src/ft_sha_helpers.s"
-	@echo "... md5_src/init_start_words.o"
-	@echo "... md5_src/init_start_words.i"
-	@echo "... md5_src/init_start_words.s"
-	@echo "... md5_src/main.o"
-	@echo "... md5_src/main.i"
-	@echo "... md5_src/main.s"
 .PHONY : help
 
 

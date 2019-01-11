@@ -4,7 +4,7 @@ project(omakovsk_md5 C)
 set(CMAKE_C_STANDARD 11)
 
 include_directories(libft)
-include_directories(md5_src)
+include_directories(hash_src)
 
 add_executable(ft_ssl
         libft/check_c_conv.c
@@ -125,19 +125,19 @@ add_executable(ft_ssl
         libft/size_spec_z.c
         libft/use_ss_long.c
         libft/use_ss_short.c
-        md5_src/ft_global.c
-        md5_src/ft_global.h
-        md5_src/ft_init_structs.c
-        md5_src/ft_main_hash_function.c
-        md5_src/ft_md5.c
-        md5_src/ft_md5.h
-        md5_src/ft_md5_instead_def.c
-        md5_src/ft_md5_rounds.c
-        md5_src/ft_parse_and_read.c
-        md5_src/ft_parse_and_read.h
-        md5_src/ft_sha.c
-        md5_src/ft_sha.h
-        md5_src/ft_sha_384_512.c
-        md5_src/ft_sha_helpers.c
-        md5_src/init_start_words.c
-        md5_src/main.c)
+        global/ft_global.c
+        global/ft_global.h
+        hash_src/ft_init_structs.c
+        hash_src/ft_main_hash_function.c
+        hash_src/ft_md5.c
+        hash_src/ft_md5.h
+        hash_src/ft_md5_instead_def.c
+        hash_src/ft_md5_rounds.c
+        hash_src/ft_parse_and_read.c
+        hash_src/ft_parse_and_read.h
+        hash_src/ft_sha.c
+        hash_src/ft_sha.h
+        hash_src/ft_sha_384_512.c
+        hash_src/ft_sha_helpers.c
+        hash_src/init_start_words.c
+        hash_src/main.c)

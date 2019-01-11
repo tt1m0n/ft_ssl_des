@@ -19,7 +19,7 @@ all: $(NAME)
 
 $(NAME): objectdir
 	@make -C libft
-	@make -C md5_src
+	@make -C hash_src
 	@ar rc $(LIBNAME) $(OBJ)
 	@gcc $(FLAGS) $(LIBNAME) -o $(NAME) 
 	@echo "\033[35m --------- ready ------------\033[0m"

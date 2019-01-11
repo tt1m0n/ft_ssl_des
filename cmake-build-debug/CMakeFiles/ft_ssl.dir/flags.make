@@ -6,5 +6,5 @@ C_FLAGS = -g   -std=gnu11
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/developer/Desktop/omakovsk_md5/libft -I/Users/developer/Desktop/omakovsk_md5/md5_src 
+C_INCLUDES = -I/Users/omakovsk/Documents/ft_ssl/libft -I/Users/omakovsk/Documents/ft_ssl/hash_src 
 
