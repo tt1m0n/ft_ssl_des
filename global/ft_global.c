@@ -73,6 +73,34 @@ char *g_hash_name[6] =
 	0
 };
 
+char *g_flag_name[10] =
+{
+	"-a",
+	"-d",
+	"-e",
+	"-i",
+	"-k",
+	"-o",
+	"-p",
+	"-s",
+	"-v",
+	0
+};
+
+const t_add_flag_ptr g_add_flag_functions[10] =
+{
+	add_a_flag,
+	add_d_flag,
+	add_e_flag,
+	add_i_flag,
+	add_k_flag,
+	add_o_flag,
+	add_p_flag,
+	add_s_flag,
+	add_v_flag,
+	0
+};
+
 const t_hash_ptr g_hash_function[6] =
 {
 	md5, sha224, sha256, sha384, sha512, 0

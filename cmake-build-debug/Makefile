@@ -123,32 +123,248 @@ ft_ssl/fast:
 	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/build
 .PHONY : ft_ssl/fast
 
-hash_src/ft_global.o: hash_src/ft_global.c.o
+crypt_src/ft_add_flags1.o: crypt_src/ft_add_flags1.c.o
 
-.PHONY : hash_src/ft_global.o
+.PHONY : crypt_src/ft_add_flags1.o
 
 # target to build an object file
-hash_src/ft_global.c.o:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/hash_src/ft_global.c.o
-.PHONY : hash_src/ft_global.c.o
+crypt_src/ft_add_flags1.c.o:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/ft_add_flags1.c.o
+.PHONY : crypt_src/ft_add_flags1.c.o
 
-hash_src/ft_global.i: hash_src/ft_global.c.i
+crypt_src/ft_add_flags1.i: crypt_src/ft_add_flags1.c.i
 
-.PHONY : hash_src/ft_global.i
+.PHONY : crypt_src/ft_add_flags1.i
 
 # target to preprocess a source file
-hash_src/ft_global.c.i:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/hash_src/ft_global.c.i
-.PHONY : hash_src/ft_global.c.i
+crypt_src/ft_add_flags1.c.i:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/ft_add_flags1.c.i
+.PHONY : crypt_src/ft_add_flags1.c.i
 
-hash_src/ft_global.s: hash_src/ft_global.c.s
+crypt_src/ft_add_flags1.s: crypt_src/ft_add_flags1.c.s
 
-.PHONY : hash_src/ft_global.s
+.PHONY : crypt_src/ft_add_flags1.s
 
 # target to generate assembly for a file
-hash_src/ft_global.c.s:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/hash_src/ft_global.c.s
-.PHONY : hash_src/ft_global.c.s
+crypt_src/ft_add_flags1.c.s:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/ft_add_flags1.c.s
+.PHONY : crypt_src/ft_add_flags1.c.s
+
+crypt_src/ft_add_flags2.o: crypt_src/ft_add_flags2.c.o
+
+.PHONY : crypt_src/ft_add_flags2.o
+
+# target to build an object file
+crypt_src/ft_add_flags2.c.o:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/ft_add_flags2.c.o
+.PHONY : crypt_src/ft_add_flags2.c.o
+
+crypt_src/ft_add_flags2.i: crypt_src/ft_add_flags2.c.i
+
+.PHONY : crypt_src/ft_add_flags2.i
+
+# target to preprocess a source file
+crypt_src/ft_add_flags2.c.i:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/ft_add_flags2.c.i
+.PHONY : crypt_src/ft_add_flags2.c.i
+
+crypt_src/ft_add_flags2.s: crypt_src/ft_add_flags2.c.s
+
+.PHONY : crypt_src/ft_add_flags2.s
+
+# target to generate assembly for a file
+crypt_src/ft_add_flags2.c.s:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/ft_add_flags2.c.s
+.PHONY : crypt_src/ft_add_flags2.c.s
+
+crypt_src/ft_base_operations.o: crypt_src/ft_base_operations.c.o
+
+.PHONY : crypt_src/ft_base_operations.o
+
+# target to build an object file
+crypt_src/ft_base_operations.c.o:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/ft_base_operations.c.o
+.PHONY : crypt_src/ft_base_operations.c.o
+
+crypt_src/ft_base_operations.i: crypt_src/ft_base_operations.c.i
+
+.PHONY : crypt_src/ft_base_operations.i
+
+# target to preprocess a source file
+crypt_src/ft_base_operations.c.i:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/ft_base_operations.c.i
+.PHONY : crypt_src/ft_base_operations.c.i
+
+crypt_src/ft_base_operations.s: crypt_src/ft_base_operations.c.s
+
+.PHONY : crypt_src/ft_base_operations.s
+
+# target to generate assembly for a file
+crypt_src/ft_base_operations.c.s:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/ft_base_operations.c.s
+.PHONY : crypt_src/ft_base_operations.c.s
+
+crypt_src/ft_crypt_operations.o: crypt_src/ft_crypt_operations.c.o
+
+.PHONY : crypt_src/ft_crypt_operations.o
+
+# target to build an object file
+crypt_src/ft_crypt_operations.c.o:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/ft_crypt_operations.c.o
+.PHONY : crypt_src/ft_crypt_operations.c.o
+
+crypt_src/ft_crypt_operations.i: crypt_src/ft_crypt_operations.c.i
+
+.PHONY : crypt_src/ft_crypt_operations.i
+
+# target to preprocess a source file
+crypt_src/ft_crypt_operations.c.i:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/ft_crypt_operations.c.i
+.PHONY : crypt_src/ft_crypt_operations.c.i
+
+crypt_src/ft_crypt_operations.s: crypt_src/ft_crypt_operations.c.s
+
+.PHONY : crypt_src/ft_crypt_operations.s
+
+# target to generate assembly for a file
+crypt_src/ft_crypt_operations.c.s:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/ft_crypt_operations.c.s
+.PHONY : crypt_src/ft_crypt_operations.c.s
+
+crypt_src/ft_des_operations.o: crypt_src/ft_des_operations.c.o
+
+.PHONY : crypt_src/ft_des_operations.o
+
+# target to build an object file
+crypt_src/ft_des_operations.c.o:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/ft_des_operations.c.o
+.PHONY : crypt_src/ft_des_operations.c.o
+
+crypt_src/ft_des_operations.i: crypt_src/ft_des_operations.c.i
+
+.PHONY : crypt_src/ft_des_operations.i
+
+# target to preprocess a source file
+crypt_src/ft_des_operations.c.i:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/ft_des_operations.c.i
+.PHONY : crypt_src/ft_des_operations.c.i
+
+crypt_src/ft_des_operations.s: crypt_src/ft_des_operations.c.s
+
+.PHONY : crypt_src/ft_des_operations.s
+
+# target to generate assembly for a file
+crypt_src/ft_des_operations.c.s:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/ft_des_operations.c.s
+.PHONY : crypt_src/ft_des_operations.c.s
+
+crypt_src/ft_flags_operations.o: crypt_src/ft_flags_operations.c.o
+
+.PHONY : crypt_src/ft_flags_operations.o
+
+# target to build an object file
+crypt_src/ft_flags_operations.c.o:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/ft_flags_operations.c.o
+.PHONY : crypt_src/ft_flags_operations.c.o
+
+crypt_src/ft_flags_operations.i: crypt_src/ft_flags_operations.c.i
+
+.PHONY : crypt_src/ft_flags_operations.i
+
+# target to preprocess a source file
+crypt_src/ft_flags_operations.c.i:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/ft_flags_operations.c.i
+.PHONY : crypt_src/ft_flags_operations.c.i
+
+crypt_src/ft_flags_operations.s: crypt_src/ft_flags_operations.c.s
+
+.PHONY : crypt_src/ft_flags_operations.s
+
+# target to generate assembly for a file
+crypt_src/ft_flags_operations.c.s:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/ft_flags_operations.c.s
+.PHONY : crypt_src/ft_flags_operations.c.s
+
+crypt_src/ft_print_functions.o: crypt_src/ft_print_functions.c.o
+
+.PHONY : crypt_src/ft_print_functions.o
+
+# target to build an object file
+crypt_src/ft_print_functions.c.o:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/ft_print_functions.c.o
+.PHONY : crypt_src/ft_print_functions.c.o
+
+crypt_src/ft_print_functions.i: crypt_src/ft_print_functions.c.i
+
+.PHONY : crypt_src/ft_print_functions.i
+
+# target to preprocess a source file
+crypt_src/ft_print_functions.c.i:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/ft_print_functions.c.i
+.PHONY : crypt_src/ft_print_functions.c.i
+
+crypt_src/ft_print_functions.s: crypt_src/ft_print_functions.c.s
+
+.PHONY : crypt_src/ft_print_functions.s
+
+# target to generate assembly for a file
+crypt_src/ft_print_functions.c.s:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/ft_print_functions.c.s
+.PHONY : crypt_src/ft_print_functions.c.s
+
+global/ft_global.o: global/ft_global.c.o
+
+.PHONY : global/ft_global.o
+
+# target to build an object file
+global/ft_global.c.o:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/global/ft_global.c.o
+.PHONY : global/ft_global.c.o
+
+global/ft_global.i: global/ft_global.c.i
+
+.PHONY : global/ft_global.i
+
+# target to preprocess a source file
+global/ft_global.c.i:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/global/ft_global.c.i
+.PHONY : global/ft_global.c.i
+
+global/ft_global.s: global/ft_global.c.s
+
+.PHONY : global/ft_global.s
+
+# target to generate assembly for a file
+global/ft_global.c.s:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/global/ft_global.c.s
+.PHONY : global/ft_global.c.s
+
+global/print_error.o: global/print_error.c.o
+
+.PHONY : global/print_error.o
+
+# target to build an object file
+global/print_error.c.o:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/global/print_error.c.o
+.PHONY : global/print_error.c.o
+
+global/print_error.i: global/print_error.c.i
+
+.PHONY : global/print_error.i
+
+# target to preprocess a source file
+global/print_error.c.i:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/global/print_error.c.i
+.PHONY : global/print_error.c.i
+
+global/print_error.s: global/print_error.c.s
+
+.PHONY : global/print_error.s
+
+# target to generate assembly for a file
+global/print_error.c.s:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/global/print_error.c.s
+.PHONY : global/print_error.c.s
 
 hash_src/ft_init_structs.o: hash_src/ft_init_structs.c.o
 
@@ -3615,9 +3831,33 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ft_ssl"
-	@echo "... hash_src/ft_global.o"
-	@echo "... hash_src/ft_global.i"
-	@echo "... hash_src/ft_global.s"
+	@echo "... crypt_src/ft_add_flags1.o"
+	@echo "... crypt_src/ft_add_flags1.i"
+	@echo "... crypt_src/ft_add_flags1.s"
+	@echo "... crypt_src/ft_add_flags2.o"
+	@echo "... crypt_src/ft_add_flags2.i"
+	@echo "... crypt_src/ft_add_flags2.s"
+	@echo "... crypt_src/ft_base_operations.o"
+	@echo "... crypt_src/ft_base_operations.i"
+	@echo "... crypt_src/ft_base_operations.s"
+	@echo "... crypt_src/ft_crypt_operations.o"
+	@echo "... crypt_src/ft_crypt_operations.i"
+	@echo "... crypt_src/ft_crypt_operations.s"
+	@echo "... crypt_src/ft_des_operations.o"
+	@echo "... crypt_src/ft_des_operations.i"
+	@echo "... crypt_src/ft_des_operations.s"
+	@echo "... crypt_src/ft_flags_operations.o"
+	@echo "... crypt_src/ft_flags_operations.i"
+	@echo "... crypt_src/ft_flags_operations.s"
+	@echo "... crypt_src/ft_print_functions.o"
+	@echo "... crypt_src/ft_print_functions.i"
+	@echo "... crypt_src/ft_print_functions.s"
+	@echo "... global/ft_global.o"
+	@echo "... global/ft_global.i"
+	@echo "... global/ft_global.s"
+	@echo "... global/print_error.o"
+	@echo "... global/print_error.i"
+	@echo "... global/print_error.s"
 	@echo "... hash_src/ft_init_structs.o"
 	@echo "... hash_src/ft_init_structs.i"
 	@echo "... hash_src/ft_init_structs.s"

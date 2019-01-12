@@ -27,7 +27,5 @@ int		parse_flags(t_hash_info *hash_info, char ***argv);
 */
 int		read_hash_info(t_hash_info *hash_info, char *info, int file);
 char	*take_text_from_file(int fd);
-int		print_error(t_hash_ptr hash_type,\
-		t_error_type error_type, char *filename);
 
 #endif

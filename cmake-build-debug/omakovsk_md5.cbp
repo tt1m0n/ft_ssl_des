@@ -84,10 +84,52 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/omakovsk/Documents/ft_ssl/hash_src/ft_global.c">
+		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/crypt_operations.h">
 			<Option target="ft_ssl"/>
 		</Unit>
-		<Unit filename="/Users/omakovsk/Documents/ft_ssl/hash_src/ft_global.h">
+		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_add_flags1.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_add_flags2.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_base64.h">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_base_operations.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_crypt_operations.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_des.h">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_des_operations.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_flags_operations.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_flags_operations.h">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_print_functions.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_print_functions.h">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/ft_ssl/global/ft_global.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/ft_ssl/global/ft_global.h">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/ft_ssl/global/print_error.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/ft_ssl/global/print_error.h">
 			<Option target="ft_ssl"/>
 		</Unit>
 		<Unit filename="/Users/omakovsk/Documents/ft_ssl/hash_src/ft_init_structs.c">

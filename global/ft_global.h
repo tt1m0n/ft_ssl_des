@@ -54,7 +54,6 @@ typedef enum	e_sha_type
 }				t_sha_type;
 
 typedef void	(*t_hash_ptr)(char*, int* flags, char* filename);
-typedef void	(*t_crypt_ptr)(char*, int* flags, char* filename);
 
 typedef struct	s_hash_info
 {
@@ -76,9 +75,12 @@ typedef	struct 	s_crypt_flags
 
 typedef struct 	s_crypt_info
 {
-	t_crypt_ptr 	cryptptr;
+	void (*cryptptr)(struct s_crypt_info *crypt_info);
 	t_crypt_flags	flags;
 }				t_crypt_info;
+
+typedef void	(*t_crypt_ptr)(t_crypt_info *crypt_info);
+typedef void	(*t_add_flag_ptr)(char***, t_crypt_flags*);
 
 void			md5(char *need_hash, int *flags, char *filename);
 void			sha224(char *need_hash, int *flags, char *filename);
@@ -86,9 +88,21 @@ void			sha256(char *need_hash, int *flags, char *filename);
 void			sha384(char *need_hash, int *flags, char *filename);
 void			sha512(char *need_hash, int *flags, char *filename);
 
-extern const t_uint		g_sha_word[64];
-extern const t_ulong	g_sha1_word[80];
-extern char				*g_hash_name[6];
-extern const t_hash_ptr g_hash_function[6];
+void			add_a_flag(char ***argv, t_crypt_flags *flags);
+void			add_d_flag(char ***argv, t_crypt_flags *flags);
+void			add_e_flag(char ***argv, t_crypt_flags *flags);
+void			add_i_flag(char ***argv, t_crypt_flags *flags);
+void			add_k_flag(char ***argv, t_crypt_flags *flags);
+void			add_o_flag(char ***argv, t_crypt_flags *flags);
+void			add_p_flag(char ***argv, t_crypt_flags *flags);
+void			add_s_flag(char ***argv, t_crypt_flags *flags);
+void			add_v_flag(char ***argv, t_crypt_flags *flags);
+
+extern const t_uint			g_sha_word[64];
+extern const t_ulong		g_sha1_word[80];
+extern char					*g_hash_name[6];
+extern char 				*g_flag_name[10];
+extern const t_add_flag_ptr g_add_flag_functions[10];
+extern const t_hash_ptr 	g_hash_function[6];
 
 #endif

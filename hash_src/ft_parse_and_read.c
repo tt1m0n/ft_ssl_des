@@ -12,6 +12,7 @@
 
 #include "../global/ft_global.h"
 #include "ft_parse_and_read.h"
+#include "../global/print_error.h"
 
 void	common_hash_parse(int *flags, char *need_hash, char *filename)
 {
