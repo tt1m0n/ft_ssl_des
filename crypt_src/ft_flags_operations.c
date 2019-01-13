@@ -22,8 +22,7 @@ int 		add_flag_to_struct(char	***argv, t_crypt_flags *flags)
 	{
 		if (ft_strcmp(g_flag_name[i], **argv) == 0)
 		{
-			g_add_flag_functions[i](argv, flags);
-			return (1);
+			return g_add_flag_functions[i](argv, flags);
 		}
 		i++;
 	}

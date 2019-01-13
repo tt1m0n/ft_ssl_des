@@ -12,7 +12,6 @@
 
 #include "../global/ft_global.h"
 #include "ft_parse_and_read.h"
-#include "../global/print_error.h"
 
 void	common_hash_parse(int *flags, char *need_hash, char *filename)
 {
@@ -77,7 +76,7 @@ int		read_hash_info(t_hash_info *hash_info, char *info, int file)
 	if (read(fd, NULL, 0) == -1)
 		return (print_error(hash_info->hashptr, try_open_dir, info));
 	if (file)
-		need_to_hash = take_text_from_file(fd);
+		need_to_hash = take_text_from_output(fd);
 	else
 		need_to_hash = info;
 	if (hash_info->flags >= P)

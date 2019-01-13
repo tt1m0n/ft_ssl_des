@@ -123,6 +123,60 @@ ft_ssl/fast:
 	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/build
 .PHONY : ft_ssl/fast
 
+crypt_src/base64_encrypt.o: crypt_src/base64_encrypt.c.o
+
+.PHONY : crypt_src/base64_encrypt.o
+
+# target to build an object file
+crypt_src/base64_encrypt.c.o:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/base64_encrypt.c.o
+.PHONY : crypt_src/base64_encrypt.c.o
+
+crypt_src/base64_encrypt.i: crypt_src/base64_encrypt.c.i
+
+.PHONY : crypt_src/base64_encrypt.i
+
+# target to preprocess a source file
+crypt_src/base64_encrypt.c.i:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/base64_encrypt.c.i
+.PHONY : crypt_src/base64_encrypt.c.i
+
+crypt_src/base64_encrypt.s: crypt_src/base64_encrypt.c.s
+
+.PHONY : crypt_src/base64_encrypt.s
+
+# target to generate assembly for a file
+crypt_src/base64_encrypt.c.s:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/base64_encrypt.c.s
+.PHONY : crypt_src/base64_encrypt.c.s
+
+crypt_src/base_decrypt.o: crypt_src/base_decrypt.c.o
+
+.PHONY : crypt_src/base_decrypt.o
+
+# target to build an object file
+crypt_src/base_decrypt.c.o:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/base_decrypt.c.o
+.PHONY : crypt_src/base_decrypt.c.o
+
+crypt_src/base_decrypt.i: crypt_src/base_decrypt.c.i
+
+.PHONY : crypt_src/base_decrypt.i
+
+# target to preprocess a source file
+crypt_src/base_decrypt.c.i:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/base_decrypt.c.i
+.PHONY : crypt_src/base_decrypt.c.i
+
+crypt_src/base_decrypt.s: crypt_src/base_decrypt.c.s
+
+.PHONY : crypt_src/base_decrypt.s
+
+# target to generate assembly for a file
+crypt_src/base_decrypt.c.s:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/base_decrypt.c.s
+.PHONY : crypt_src/base_decrypt.c.s
+
 crypt_src/ft_add_flags1.o: crypt_src/ft_add_flags1.c.o
 
 .PHONY : crypt_src/ft_add_flags1.o
@@ -3831,6 +3885,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ft_ssl"
+	@echo "... crypt_src/base64_encrypt.o"
+	@echo "... crypt_src/base64_encrypt.i"
+	@echo "... crypt_src/base64_encrypt.s"
+	@echo "... crypt_src/base_decrypt.o"
+	@echo "... crypt_src/base_decrypt.i"
+	@echo "... crypt_src/base_decrypt.s"
 	@echo "... crypt_src/ft_add_flags1.o"
 	@echo "... crypt_src/ft_add_flags1.i"
 	@echo "... crypt_src/ft_add_flags1.s"

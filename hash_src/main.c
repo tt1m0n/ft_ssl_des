@@ -15,7 +15,6 @@
 #include "ft_sha.h"
 #include "../crypt_src/ft_base64.h"
 #include "ft_parse_and_read.h"
-#include "../global/print_error.h"
 #include "../crypt_src/crypt_operations.h"
 
 t_hash_ptr	find_hash_type(char *hash)
@@ -32,49 +31,18 @@ t_hash_ptr	find_hash_type(char *hash)
 	return (0);
 }
 
-void	test(char* a, int* flags, char* filename)
+t_crypt_ptr	find_crypt_type(char *crypt_type)
 {
-	(void)a;
-	(void)flags;
-	(void)filename;
-}
+	int i;
 
-
-t_crypt_ptr	find_crypt_type(char *hash)
-{
-//	int i;
-//
-//	i = START_VALUE;
-//	while (g_crypt_name[i] != 0)
-//	{
-//		if (ft_strcmp(g_crypt_name[i], hash) == 0)
-//			return (g_crypt_name[i]);
-//		i++;
-//	}
-//	return (0);
-	(void)hash;
-	return test;
-}
-
-char		*take_text_from_file(int fd)
-{
-	char	*need_to_hash;
-	char	*tmp_buffer;
-	char	*ptr_to_free;
-
-	need_to_hash = ft_memalloc(1);
-	tmp_buffer = ft_memalloc(BUFFER_SIZE);
-	while (read(fd, tmp_buffer, BUFFER_SIZE - 1))
+	i = START_VALUE;
+	while (g_crypt_name[i] != 0)
 	{
-		ptr_to_free = need_to_hash;
-		need_to_hash = ft_strjoin(need_to_hash, tmp_buffer);
-		free(ptr_to_free);
-		ft_memset(tmp_buffer, 0, BUFFER_SIZE);
+		if (ft_strcmp(g_crypt_name[i], crypt_type) == 0)
+			return (g_crypt_function[i]);
+		i++;
 	}
-	free(tmp_buffer);
-	if (fd)
-		close(fd);
-	return (need_to_hash);
+	return (0);
 }
 
 int			hash_info_operations(char **argv, t_hash_info *hash_info)

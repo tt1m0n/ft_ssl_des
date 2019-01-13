@@ -140,4 +140,4 @@ add_executable(ft_ssl
         hash_src/ft_sha_384_512.c
         hash_src/ft_sha_helpers.c
         hash_src/init_start_words.c
-        hash_src/main.c crypt_src/ft_add_flags1.c crypt_src/ft_add_flags2.c crypt_src/ft_base_operations.c global/print_error.c global/print_error.h crypt_src/ft_base64.h crypt_src/ft_des.h crypt_src/ft_des_operations.c crypt_src/ft_crypt_operations.c crypt_src/ft_print_functions.c crypt_src/ft_print_functions.h crypt_src/ft_flags_operations.h crypt_src/ft_flags_operations.c crypt_src/crypt_operations.h)
+        hash_src/main.c crypt_src/ft_add_flags1.c crypt_src/ft_add_flags2.c crypt_src/ft_base_operations.c global/print_error.c crypt_src/ft_base64.h crypt_src/ft_des.h crypt_src/ft_des_operations.c crypt_src/ft_crypt_operations.c crypt_src/ft_print_functions.c crypt_src/ft_print_functions.h crypt_src/ft_flags_operations.h crypt_src/ft_flags_operations.c crypt_src/crypt_operations.h crypt_src/base64_encrypt.c crypt_src/base_decrypt.c)

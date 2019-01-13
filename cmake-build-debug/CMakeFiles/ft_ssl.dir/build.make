@@ -1838,6 +1838,32 @@ CMakeFiles/ft_ssl.dir/crypt_src/ft_flags_operations.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_ssl.dir/crypt_src/ft_flags_operations.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/omakovsk/Documents/ft_ssl/crypt_src/ft_flags_operations.c -o CMakeFiles/ft_ssl.dir/crypt_src/ft_flags_operations.c.s
 
+CMakeFiles/ft_ssl.dir/crypt_src/base64_encrypt.c.o: CMakeFiles/ft_ssl.dir/flags.make
+CMakeFiles/ft_ssl.dir/crypt_src/base64_encrypt.c.o: ../crypt_src/base64_encrypt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/omakovsk/Documents/ft_ssl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_138) "Building C object CMakeFiles/ft_ssl.dir/crypt_src/base64_encrypt.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_ssl.dir/crypt_src/base64_encrypt.c.o   -c /Users/omakovsk/Documents/ft_ssl/crypt_src/base64_encrypt.c
+
+CMakeFiles/ft_ssl.dir/crypt_src/base64_encrypt.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_ssl.dir/crypt_src/base64_encrypt.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/omakovsk/Documents/ft_ssl/crypt_src/base64_encrypt.c > CMakeFiles/ft_ssl.dir/crypt_src/base64_encrypt.c.i
+
+CMakeFiles/ft_ssl.dir/crypt_src/base64_encrypt.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_ssl.dir/crypt_src/base64_encrypt.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/omakovsk/Documents/ft_ssl/crypt_src/base64_encrypt.c -o CMakeFiles/ft_ssl.dir/crypt_src/base64_encrypt.c.s
+
+CMakeFiles/ft_ssl.dir/crypt_src/base_decrypt.c.o: CMakeFiles/ft_ssl.dir/flags.make
+CMakeFiles/ft_ssl.dir/crypt_src/base_decrypt.c.o: ../crypt_src/base_decrypt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/omakovsk/Documents/ft_ssl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_139) "Building C object CMakeFiles/ft_ssl.dir/crypt_src/base_decrypt.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_ssl.dir/crypt_src/base_decrypt.c.o   -c /Users/omakovsk/Documents/ft_ssl/crypt_src/base_decrypt.c
+
+CMakeFiles/ft_ssl.dir/crypt_src/base_decrypt.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_ssl.dir/crypt_src/base_decrypt.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/omakovsk/Documents/ft_ssl/crypt_src/base_decrypt.c > CMakeFiles/ft_ssl.dir/crypt_src/base_decrypt.c.i
+
+CMakeFiles/ft_ssl.dir/crypt_src/base_decrypt.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_ssl.dir/crypt_src/base_decrypt.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/omakovsk/Documents/ft_ssl/crypt_src/base_decrypt.c -o CMakeFiles/ft_ssl.dir/crypt_src/base_decrypt.c.s
+
 # Object files for target ft_ssl
 ft_ssl_OBJECTS = \
 "CMakeFiles/ft_ssl.dir/libft/check_c_conv.c.o" \
@@ -1976,7 +2002,9 @@ ft_ssl_OBJECTS = \
 "CMakeFiles/ft_ssl.dir/crypt_src/ft_des_operations.c.o" \
 "CMakeFiles/ft_ssl.dir/crypt_src/ft_crypt_operations.c.o" \
 "CMakeFiles/ft_ssl.dir/crypt_src/ft_print_functions.c.o" \
-"CMakeFiles/ft_ssl.dir/crypt_src/ft_flags_operations.c.o"
+"CMakeFiles/ft_ssl.dir/crypt_src/ft_flags_operations.c.o" \
+"CMakeFiles/ft_ssl.dir/crypt_src/base64_encrypt.c.o" \
+"CMakeFiles/ft_ssl.dir/crypt_src/base_decrypt.c.o"
 
 # External object files for target ft_ssl
 ft_ssl_EXTERNAL_OBJECTS =
@@ -2118,9 +2146,11 @@ ft_ssl: CMakeFiles/ft_ssl.dir/crypt_src/ft_des_operations.c.o
 ft_ssl: CMakeFiles/ft_ssl.dir/crypt_src/ft_crypt_operations.c.o
 ft_ssl: CMakeFiles/ft_ssl.dir/crypt_src/ft_print_functions.c.o
 ft_ssl: CMakeFiles/ft_ssl.dir/crypt_src/ft_flags_operations.c.o
+ft_ssl: CMakeFiles/ft_ssl.dir/crypt_src/base64_encrypt.c.o
+ft_ssl: CMakeFiles/ft_ssl.dir/crypt_src/base_decrypt.c.o
 ft_ssl: CMakeFiles/ft_ssl.dir/build.make
 ft_ssl: CMakeFiles/ft_ssl.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/omakovsk/Documents/ft_ssl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_138) "Linking C executable ft_ssl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/omakovsk/Documents/ft_ssl/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_140) "Linking C executable ft_ssl"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ft_ssl.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

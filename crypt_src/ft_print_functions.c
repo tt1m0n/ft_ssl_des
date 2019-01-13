@@ -2,7 +2,8 @@
 
 int 		print_crypt_flags_usage(char *argument)
 {
-	ft_printf("unknown options \'%s\'\n\n", argument);
+	if (argument)
+		ft_printf("unknown options \'%s\'\n\n", argument);
 	ft_printf("-a   decode/encode the input/output in base64,\""
 		   "depending on the encrypt mode\n");
 	ft_printf("-d   decrypt mode\n");

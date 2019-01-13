@@ -65,11 +65,17 @@ typedef	struct 	s_crypt_flags
 {
 	uint8_t a;
 	uint8_t d;
-	char *input_file;
-	char *key;
+	uint8_t i;
+	char 	*input_file;
+	uint8_t k;
+	char 	*key;
+	uint8_t o;
 	char *output_file;
+	uint8_t p;
 	char *password;
+	uint8_t s;
 	char *salt;
+	uint8_t v;
 	char *in_vector;
 }				t_crypt_flags;
 
@@ -80,29 +86,46 @@ typedef struct 	s_crypt_info
 }				t_crypt_info;
 
 typedef void	(*t_crypt_ptr)(t_crypt_info *crypt_info);
-typedef void	(*t_add_flag_ptr)(char***, t_crypt_flags*);
+typedef int		(*t_add_flag_ptr)(char***, t_crypt_flags*);
 
+/*
+** main hash functions
+*/
 void			md5(char *need_hash, int *flags, char *filename);
 void			sha224(char *need_hash, int *flags, char *filename);
 void			sha256(char *need_hash, int *flags, char *filename);
 void			sha384(char *need_hash, int *flags, char *filename);
 void			sha512(char *need_hash, int *flags, char *filename);
 
-void			add_a_flag(char ***argv, t_crypt_flags *flags);
-void			add_d_flag(char ***argv, t_crypt_flags *flags);
-void			add_e_flag(char ***argv, t_crypt_flags *flags);
-void			add_i_flag(char ***argv, t_crypt_flags *flags);
-void			add_k_flag(char ***argv, t_crypt_flags *flags);
-void			add_o_flag(char ***argv, t_crypt_flags *flags);
-void			add_p_flag(char ***argv, t_crypt_flags *flags);
-void			add_s_flag(char ***argv, t_crypt_flags *flags);
-void			add_v_flag(char ***argv, t_crypt_flags *flags);
+/*
+** added crypt flags to struct
+*/
+int				add_a_flag(char ***argv, t_crypt_flags *flags);
+int				add_d_flag(char ***argv, t_crypt_flags *flags);
+int				add_e_flag(char ***argv, t_crypt_flags *flags);
+int				add_i_flag(char ***argv, t_crypt_flags *flags);
+int				add_k_flag(char ***argv, t_crypt_flags *flags);
+int				add_o_flag(char ***argv, t_crypt_flags *flags);
+int				add_p_flag(char ***argv, t_crypt_flags *flags);
+int				add_s_flag(char ***argv, t_crypt_flags *flags);
+int				add_v_flag(char ***argv, t_crypt_flags *flags);
+
+char			*take_text_from_output(int fd);
+
+/*
+** print_error.c
+*/
+int				print_error(t_hash_ptr hash_type,\
+						t_error_type error_type, char *filename);
+int				printf_no_flag_error(t_hash_ptr hash_type);
 
 extern const t_uint			g_sha_word[64];
 extern const t_ulong		g_sha1_word[80];
 extern char					*g_hash_name[6];
+extern char					*g_crypt_name[5];
 extern char 				*g_flag_name[10];
 extern const t_add_flag_ptr g_add_flag_functions[10];
 extern const t_hash_ptr 	g_hash_function[6];
+extern const t_crypt_ptr 	g_crypt_function[5];
 
 #endif

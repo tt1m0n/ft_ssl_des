@@ -11,6 +11,8 @@
 /* ************************************************************************** */
 
 #include "ft_global.h"
+#include "../crypt_src/ft_base64.h"
+#include "../crypt_src/ft_des.h"
 
 const t_uint g_sha_word[64] =
 {
@@ -73,6 +75,16 @@ char *g_hash_name[6] =
 	0
 };
 
+char *g_crypt_name[5] =
+{
+	"base64",
+	"des",
+	"des-ecb",
+	"des-cbc",
+	0
+};
+
+
 char *g_flag_name[10] =
 {
 	"-a",
@@ -105,3 +117,29 @@ const t_hash_ptr g_hash_function[6] =
 {
 	md5, sha224, sha256, sha384, sha512, 0
 };
+
+const t_crypt_ptr g_crypt_function[5] =
+{
+	base64, des, des_ecb, des_cbc, 0
+};
+
+char		*take_text_from_output(int fd)
+{
+	char	*need_to_hash;
+	char	*tmp_buffer;
+	char	*ptr_to_free;
+
+	need_to_hash = ft_memalloc(1);
+	tmp_buffer = ft_memalloc(BUFFER_SIZE);
+	while (read(fd, tmp_buffer, BUFFER_SIZE - 1))
+	{
+		ptr_to_free = need_to_hash;
+		need_to_hash = ft_strjoin(need_to_hash, tmp_buffer);
+		free(ptr_to_free);
+		ft_memset(tmp_buffer, 0, BUFFER_SIZE);
+	}
+	free(tmp_buffer);
+	if (fd)
+		close(fd);
+	return (need_to_hash);
+}
