@@ -84,8 +84,7 @@ char *g_crypt_name[5] =
 	0
 };
 
-
-char *g_flag_name[10] =
+char *g_des_flag_name[10] =
 {
 	"-a",
 	"-d",
@@ -99,7 +98,16 @@ char *g_flag_name[10] =
 	0
 };
 
-const t_add_flag_ptr g_add_flag_functions[10] =
+char *g_base_flag_name[5] =
+{
+	"-a",
+	"-d",
+	"-e",
+	"-i",
+	0
+};
+
+const t_add_flag_ptr g_add_flag_des_functions[10] =
 {
 	add_a_flag,
 	add_d_flag,
@@ -110,6 +118,15 @@ const t_add_flag_ptr g_add_flag_functions[10] =
 	add_p_flag,
 	add_s_flag,
 	add_v_flag,
+	0
+};
+
+const t_add_flag_ptr g_add_flag_base_functions[5] =
+{
+	add_a_flag,
+	add_d_flag,
+	add_e_flag,
+	add_i_flag,
 	0
 };
 

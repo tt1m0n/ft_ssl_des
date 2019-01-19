@@ -15,7 +15,7 @@
 #include "ft_sha.h"
 #include "../crypt_src/ft_base64.h"
 #include "ft_parse_and_read.h"
-#include "../crypt_src/crypt_operations.h"
+#include "../crypt_src/ft_crypt_operations.h"
 
 t_hash_ptr	find_hash_type(char *hash)
 {

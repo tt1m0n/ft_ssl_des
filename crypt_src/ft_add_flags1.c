@@ -1,50 +1,56 @@
 #include "../global/ft_global.h"
-#include "ft_print_functions.h"
+#include "ft_crypt_operations.h"
+#include "ft_des.h"
 
-int		add_a_flag(char ***argv, t_crypt_flags *flags)
+int		add_a_flag(char ***argv, t_crypt_info *info)
 {
 	(void)argv;
-	flags->a = 1;
+	info->flags.a = 1;
 	return (1);
 }
 
-int		add_d_flag(char ***argv, t_crypt_flags *flags)
+int		add_d_flag(char ***argv, t_crypt_info *info)
 {
 	(void)argv;
-	flags->d = 1;
+	info->flags.d = 1;
 	return (1);
 }
 
-int		add_e_flag(char ***argv, t_crypt_flags *flags)
+int		add_e_flag(char ***argv, t_crypt_info *info)
 {
 	(void)argv;
-	flags->d = 0;
+	info->flags.d = 0;
 	return (1);
 }
 
-int		add_i_flag(char ***argv, t_crypt_flags *flags)
+int		add_i_flag(char ***argv, t_crypt_info *info)
 {
-	flags->i = 1;
+	info->flags.i = 1;
 	(*argv)++;
-	flags->input_file = **argv;
-	if (!flags->input_file)
+	info->flags.input_file = **argv;
+	if (!info->flags.input_file)
 	{
 		ft_printf("missing file argument for -i\n\n");
-		print_crypt_flags_usage(NULL);
+		print_crypt_flags_usage(NULL, info->crypt_type);
 		return (0);
 	}
 	return (1);
 }
 
-int		add_k_flag(char ***argv, t_crypt_flags *flags)
+int		add_k_flag(char ***argv, t_crypt_info *info)
 {
-	flags->k = 1;
+	info->flags.k = 1;
 	(*argv)++;
-	flags->key = **argv;
-	if (!flags->key)
+	if (!**argv)
 	{
 		ft_printf("missing key argument for -k\n\n");
-		print_crypt_flags_usage(NULL);
+		print_crypt_flags_usage(NULL, info->crypt_type);
+		return (0);
+	}
+	info->flags.key = get_hex_string(**argv, DES_KEY_LEN);
+	if (!info->flags.key)
+	{
+		ft_printf("invalid hex key value\n");
 		return (0);
 	}
 	return (1);
