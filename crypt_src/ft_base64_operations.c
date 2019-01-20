@@ -12,3 +12,4 @@ void	base64(t_crypt_info *crypt_info)
 	else
 		base64_encrypt(crypt_info);
 }
+

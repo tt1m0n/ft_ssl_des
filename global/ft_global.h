@@ -56,7 +56,8 @@ typedef enum	e_sha_type
 typedef enum	e_crypt_type
 {
 	base64_type = 0,
-	des_type
+	des_type,
+	unknown_type
 }				t_crypt_type;
 
 
@@ -86,12 +87,13 @@ typedef	struct 		s_crypt_flags
 	unsigned char	*in_vector;
 }				t_crypt_flags;
 
-typedef struct 	s_crypt_info
+typedef struct 	    s_crypt_info
 {
 	t_crypt_type	crypt_type;
 	void (*cryptptr)(struct s_crypt_info *crypt_info);
 	t_crypt_flags	flags;
-}				t_crypt_info;
+    unsigned int	data_len;
+}				    t_crypt_info;
 
 typedef void	(*t_crypt_ptr)(t_crypt_info *crypt_info);
 typedef int		(*t_add_flag_ptr)(char***, t_crypt_info*);
@@ -133,7 +135,6 @@ extern char					*g_hash_name[6];
 extern char					*g_crypt_name[5];
 extern char 				*g_des_flag_name[10];
 extern char 				*g_base_flag_name[5];
-extern char 				*g_flag_name[10];
 extern const t_add_flag_ptr g_add_flag_des_functions[10];
 extern const t_add_flag_ptr g_add_flag_base_functions[5];
 extern const t_hash_ptr 	g_hash_function[6];

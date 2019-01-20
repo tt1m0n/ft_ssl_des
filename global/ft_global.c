@@ -100,10 +100,10 @@ char *g_des_flag_name[10] =
 
 char *g_base_flag_name[5] =
 {
-	"-a",
 	"-d",
 	"-e",
 	"-i",
+	"-o",
 	0
 };
 
@@ -123,10 +123,10 @@ const t_add_flag_ptr g_add_flag_des_functions[10] =
 
 const t_add_flag_ptr g_add_flag_base_functions[5] =
 {
-	add_a_flag,
 	add_d_flag,
 	add_e_flag,
 	add_i_flag,
+	add_o_flag,
 	0
 };
 

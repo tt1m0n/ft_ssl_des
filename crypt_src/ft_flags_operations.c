@@ -7,11 +7,17 @@ void		zero_crypt_flags(t_crypt_flags *flags)
 {
 	flags->a = 0;
 	flags->d = 0;
+	flags->i = 0;
 	flags->input_file = NULL;
+	flags->k = 0;
 	flags->key = NULL;
+	flags->o = 0;
 	flags->output_file = NULL;
+	flags->p = 0;
 	flags->password = NULL;
+	flags->s = 0;
 	flags->salt = NULL;
+	flags->v = 0;
 	flags->in_vector = NULL;
 }
 
@@ -24,7 +30,7 @@ int 		add_flag_to_base_struct(char ***argv, t_crypt_info *info)
 	{
 		if (ft_strcmp(g_base_flag_name[i], **argv) == 0)
 		{
-			return g_add_flag_base_functions[i](argv, &info->flags);
+			return g_add_flag_base_functions[i](argv, info);
 		}
 		i++;
 	}
@@ -41,7 +47,7 @@ int 		add_flag_to_des_struct(char	***argv, t_crypt_info *info)
 	{
 		if (ft_strcmp(g_des_flag_name[i], **argv) == 0)
 		{
-			return g_add_flag_des_functions[i](argv, &info->flags);
+			return g_add_flag_des_functions[i](argv, info);
 		}
 		i++;
 	}

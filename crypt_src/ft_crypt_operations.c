@@ -4,7 +4,7 @@
 #include "ft_crypt_operations.h"
 #include "ft_flags_operations.h"
 
-void		crypt_info_operations(char **argv, t_crypt_info *crypt_info)
+void			crypt_info_operations(char **argv, t_crypt_info *crypt_info)
 {
 	if (crypt_info->cryptptr == base64)
 		crypt_info->crypt_type = base64_type;
@@ -13,8 +13,32 @@ void		crypt_info_operations(char **argv, t_crypt_info *crypt_info)
 	zero_crypt_flags(&crypt_info->flags);
 	if (!is_parse_crypt_flags(argv, crypt_info))
 		return ;
-	if (crypt_info->cryptptr == base64_type)
+	if (crypt_info->crypt_type == base64_type)
 		base64_operations(crypt_info);
 	else
 		des_operations(crypt_info);
+}
+
+unsigned char	*read_base64_crypt_text(t_crypt_info *crypt_info)
+{
+	int fd;
+
+	fd = 0;
+	if (crypt_info->flags.input_file)
+		fd = open(crypt_info->flags.input_file, O_RDONLY);
+	if (fd == -1)
+		ft_printf("%s: Noo such file or directory\n",
+				  crypt_info->flags.input_file);
+	if (read(fd, NULL, 0) == -1)
+		ft_printf("%s: Is a directory\n", crypt_info->flags.input_file);
+	return take_crypt_text_from_output(fd, crypt_info);
+}
+
+int		ft_isspace(int c)
+{
+	if (c == ' ' || c == '\n' || c == '\t')
+		return (1);
+	if (c == '\v' || c == '\f' || c == '\r')
+		return (1);
+	return (0);
 }

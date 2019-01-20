@@ -123,6 +123,60 @@ ft_ssl/fast:
 	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/build
 .PHONY : ft_ssl/fast
 
+crypt_src/base64_decrypt_operations.o: crypt_src/base64_decrypt_operations.c.o
+
+.PHONY : crypt_src/base64_decrypt_operations.o
+
+# target to build an object file
+crypt_src/base64_decrypt_operations.c.o:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/base64_decrypt_operations.c.o
+.PHONY : crypt_src/base64_decrypt_operations.c.o
+
+crypt_src/base64_decrypt_operations.i: crypt_src/base64_decrypt_operations.c.i
+
+.PHONY : crypt_src/base64_decrypt_operations.i
+
+# target to preprocess a source file
+crypt_src/base64_decrypt_operations.c.i:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/base64_decrypt_operations.c.i
+.PHONY : crypt_src/base64_decrypt_operations.c.i
+
+crypt_src/base64_decrypt_operations.s: crypt_src/base64_decrypt_operations.c.s
+
+.PHONY : crypt_src/base64_decrypt_operations.s
+
+# target to generate assembly for a file
+crypt_src/base64_decrypt_operations.c.s:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/base64_decrypt_operations.c.s
+.PHONY : crypt_src/base64_decrypt_operations.c.s
+
+crypt_src/base_encrypt_operations.o: crypt_src/base_encrypt_operations.c.o
+
+.PHONY : crypt_src/base_encrypt_operations.o
+
+# target to build an object file
+crypt_src/base_encrypt_operations.c.o:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/base_encrypt_operations.c.o
+.PHONY : crypt_src/base_encrypt_operations.c.o
+
+crypt_src/base_encrypt_operations.i: crypt_src/base_encrypt_operations.c.i
+
+.PHONY : crypt_src/base_encrypt_operations.i
+
+# target to preprocess a source file
+crypt_src/base_encrypt_operations.c.i:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/base_encrypt_operations.c.i
+.PHONY : crypt_src/base_encrypt_operations.c.i
+
+crypt_src/base_encrypt_operations.s: crypt_src/base_encrypt_operations.c.s
+
+.PHONY : crypt_src/base_encrypt_operations.s
+
+# target to generate assembly for a file
+crypt_src/base_encrypt_operations.c.s:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/base_encrypt_operations.c.s
+.PHONY : crypt_src/base_encrypt_operations.c.s
+
 crypt_src/ft_add_flags1.o: crypt_src/ft_add_flags1.c.o
 
 .PHONY : crypt_src/ft_add_flags1.o
@@ -177,6 +231,33 @@ crypt_src/ft_add_flags2.c.s:
 	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/ft_add_flags2.c.s
 .PHONY : crypt_src/ft_add_flags2.c.s
 
+crypt_src/ft_base64_decrypt.o: crypt_src/ft_base64_decrypt.c.o
+
+.PHONY : crypt_src/ft_base64_decrypt.o
+
+# target to build an object file
+crypt_src/ft_base64_decrypt.c.o:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/ft_base64_decrypt.c.o
+.PHONY : crypt_src/ft_base64_decrypt.c.o
+
+crypt_src/ft_base64_decrypt.i: crypt_src/ft_base64_decrypt.c.i
+
+.PHONY : crypt_src/ft_base64_decrypt.i
+
+# target to preprocess a source file
+crypt_src/ft_base64_decrypt.c.i:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/ft_base64_decrypt.c.i
+.PHONY : crypt_src/ft_base64_decrypt.c.i
+
+crypt_src/ft_base64_decrypt.s: crypt_src/ft_base64_decrypt.c.s
+
+.PHONY : crypt_src/ft_base64_decrypt.s
+
+# target to generate assembly for a file
+crypt_src/ft_base64_decrypt.c.s:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/ft_base64_decrypt.c.s
+.PHONY : crypt_src/ft_base64_decrypt.c.s
+
 crypt_src/ft_base64_encrypt.o: crypt_src/ft_base64_encrypt.c.o
 
 .PHONY : crypt_src/ft_base64_encrypt.o
@@ -204,59 +285,59 @@ crypt_src/ft_base64_encrypt.c.s:
 	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/ft_base64_encrypt.c.s
 .PHONY : crypt_src/ft_base64_encrypt.c.s
 
-crypt_src/ft_base_decrypt.o: crypt_src/ft_base_decrypt.c.o
+crypt_src/ft_base64_operations.o: crypt_src/ft_base64_operations.c.o
 
-.PHONY : crypt_src/ft_base_decrypt.o
-
-# target to build an object file
-crypt_src/ft_base_decrypt.c.o:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/ft_base_decrypt.c.o
-.PHONY : crypt_src/ft_base_decrypt.c.o
-
-crypt_src/ft_base_decrypt.i: crypt_src/ft_base_decrypt.c.i
-
-.PHONY : crypt_src/ft_base_decrypt.i
-
-# target to preprocess a source file
-crypt_src/ft_base_decrypt.c.i:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/ft_base_decrypt.c.i
-.PHONY : crypt_src/ft_base_decrypt.c.i
-
-crypt_src/ft_base_decrypt.s: crypt_src/ft_base_decrypt.c.s
-
-.PHONY : crypt_src/ft_base_decrypt.s
-
-# target to generate assembly for a file
-crypt_src/ft_base_decrypt.c.s:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/ft_base_decrypt.c.s
-.PHONY : crypt_src/ft_base_decrypt.c.s
-
-crypt_src/ft_base_operations.o: crypt_src/ft_base_operations.c.o
-
-.PHONY : crypt_src/ft_base_operations.o
+.PHONY : crypt_src/ft_base64_operations.o
 
 # target to build an object file
-crypt_src/ft_base_operations.c.o:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/ft_base_operations.c.o
-.PHONY : crypt_src/ft_base_operations.c.o
+crypt_src/ft_base64_operations.c.o:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/ft_base64_operations.c.o
+.PHONY : crypt_src/ft_base64_operations.c.o
 
-crypt_src/ft_base_operations.i: crypt_src/ft_base_operations.c.i
+crypt_src/ft_base64_operations.i: crypt_src/ft_base64_operations.c.i
 
-.PHONY : crypt_src/ft_base_operations.i
+.PHONY : crypt_src/ft_base64_operations.i
 
 # target to preprocess a source file
-crypt_src/ft_base_operations.c.i:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/ft_base_operations.c.i
-.PHONY : crypt_src/ft_base_operations.c.i
+crypt_src/ft_base64_operations.c.i:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/ft_base64_operations.c.i
+.PHONY : crypt_src/ft_base64_operations.c.i
 
-crypt_src/ft_base_operations.s: crypt_src/ft_base_operations.c.s
+crypt_src/ft_base64_operations.s: crypt_src/ft_base64_operations.c.s
 
-.PHONY : crypt_src/ft_base_operations.s
+.PHONY : crypt_src/ft_base64_operations.s
 
 # target to generate assembly for a file
-crypt_src/ft_base_operations.c.s:
-	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/ft_base_operations.c.s
-.PHONY : crypt_src/ft_base_operations.c.s
+crypt_src/ft_base64_operations.c.s:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/ft_base64_operations.c.s
+.PHONY : crypt_src/ft_base64_operations.c.s
+
+crypt_src/ft_base64_output.o: crypt_src/ft_base64_output.c.o
+
+.PHONY : crypt_src/ft_base64_output.o
+
+# target to build an object file
+crypt_src/ft_base64_output.c.o:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/ft_base64_output.c.o
+.PHONY : crypt_src/ft_base64_output.c.o
+
+crypt_src/ft_base64_output.i: crypt_src/ft_base64_output.c.i
+
+.PHONY : crypt_src/ft_base64_output.i
+
+# target to preprocess a source file
+crypt_src/ft_base64_output.c.i:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/ft_base64_output.c.i
+.PHONY : crypt_src/ft_base64_output.c.i
+
+crypt_src/ft_base64_output.s: crypt_src/ft_base64_output.c.s
+
+.PHONY : crypt_src/ft_base64_output.s
+
+# target to generate assembly for a file
+crypt_src/ft_base64_output.c.s:
+	$(MAKE) -f CMakeFiles/ft_ssl.dir/build.make CMakeFiles/ft_ssl.dir/crypt_src/ft_base64_output.c.s
+.PHONY : crypt_src/ft_base64_output.c.s
 
 crypt_src/ft_crypt_operations.o: crypt_src/ft_crypt_operations.c.o
 
@@ -3939,21 +4020,30 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ft_ssl"
+	@echo "... crypt_src/base64_decrypt_operations.o"
+	@echo "... crypt_src/base64_decrypt_operations.i"
+	@echo "... crypt_src/base64_decrypt_operations.s"
+	@echo "... crypt_src/base_encrypt_operations.o"
+	@echo "... crypt_src/base_encrypt_operations.i"
+	@echo "... crypt_src/base_encrypt_operations.s"
 	@echo "... crypt_src/ft_add_flags1.o"
 	@echo "... crypt_src/ft_add_flags1.i"
 	@echo "... crypt_src/ft_add_flags1.s"
 	@echo "... crypt_src/ft_add_flags2.o"
 	@echo "... crypt_src/ft_add_flags2.i"
 	@echo "... crypt_src/ft_add_flags2.s"
+	@echo "... crypt_src/ft_base64_decrypt.o"
+	@echo "... crypt_src/ft_base64_decrypt.i"
+	@echo "... crypt_src/ft_base64_decrypt.s"
 	@echo "... crypt_src/ft_base64_encrypt.o"
 	@echo "... crypt_src/ft_base64_encrypt.i"
 	@echo "... crypt_src/ft_base64_encrypt.s"
-	@echo "... crypt_src/ft_base_decrypt.o"
-	@echo "... crypt_src/ft_base_decrypt.i"
-	@echo "... crypt_src/ft_base_decrypt.s"
-	@echo "... crypt_src/ft_base_operations.o"
-	@echo "... crypt_src/ft_base_operations.i"
-	@echo "... crypt_src/ft_base_operations.s"
+	@echo "... crypt_src/ft_base64_operations.o"
+	@echo "... crypt_src/ft_base64_operations.i"
+	@echo "... crypt_src/ft_base64_operations.s"
+	@echo "... crypt_src/ft_base64_output.o"
+	@echo "... crypt_src/ft_base64_output.i"
+	@echo "... crypt_src/ft_base64_output.s"
 	@echo "... crypt_src/ft_crypt_operations.o"
 	@echo "... crypt_src/ft_crypt_operations.i"
 	@echo "... crypt_src/ft_crypt_operations.s"

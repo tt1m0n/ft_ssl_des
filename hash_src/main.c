@@ -10,12 +10,21 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../global/ft_global.h"
 #include "ft_md5.h"
 #include "ft_sha.h"
-#include "../crypt_src/ft_base64.h"
 #include "ft_parse_and_read.h"
+#include "../crypt_src/ft_base64.h"
+#include "../global/ft_global.h"
 #include "../crypt_src/ft_crypt_operations.h"
+#include "../crypt_src/ft_flags_operations.h"
+
+void    zero_crypt_info_struct(t_crypt_info *crypt_info)
+{
+    crypt_info->crypt_type = unknown_type;
+    crypt_info->cryptptr = 0;
+    zero_crypt_flags(&crypt_info->flags);
+    crypt_info->data_len = 0;
+}
 
 t_hash_ptr	find_hash_type(char *hash)
 {
@@ -67,7 +76,7 @@ int			main(int argc, char **argv)
 
 	hash_info.flags = 0;
 	hash_info.hashptr = 0;
-	crypt_info.cryptptr = 0;
+	zero_crypt_info_struct(&crypt_info);
 	argv[argc] = NULL;
 	if (argc == 1)
 		ft_printf(USAGE_STRING);

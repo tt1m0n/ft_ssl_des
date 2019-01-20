@@ -1,30 +1,32 @@
 #include "ft_crypt_operations.h"
 
-unsigned char	*take_crypt_text_from_output(int fd)
+unsigned char	*take_crypt_text_from_output(int fd, t_crypt_info *crypt_info)
 {
-	unsigned char	*need_to_hash;
+	unsigned char	*need_to_crypt;
 	unsigned char	*tmp_buffer;
 	unsigned char	*ptr_to_free;
+	unsigned int    ret_len;
 
-	need_to_hash = ft_memalloc(1);
+	need_to_crypt = ft_memalloc(1);
 	tmp_buffer = ft_memalloc(BUFFER_SIZE);
-	while (read(fd, tmp_buffer, BUFFER_SIZE - 1))
+	while ((ret_len = read(fd, (void*)tmp_buffer, BUFFER_SIZE - 1)) > 0)
 	{
-		ptr_to_free = need_to_hash;
-		need_to_hash = ft_strjoin_unsigned(need_to_hash, tmp_buffer);
+		ptr_to_free = need_to_crypt;
+		need_to_crypt = ft_strjoin_unsigned(need_to_crypt, tmp_buffer);
 		free(ptr_to_free);
 		ft_memset(tmp_buffer, 0, BUFFER_SIZE);
+		crypt_info->data_len += ret_len;
 	}
 	free(tmp_buffer);
 	if (fd)
 		close(fd);
-	return (need_to_hash);
+	return (need_to_crypt);
 }
 
 unsigned char	*ft_strjoin_unsigned(unsigned char const *s1,
 									unsigned char const *s2)
 {
-	int		i;
+	int		        i;
 	unsigned char	*p;
 
 	i = 0;
