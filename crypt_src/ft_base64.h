@@ -26,25 +26,22 @@ void			three_to_four(unsigned char *str, char *key,
 /*
 ** ft_base64_decrypt.c
 */
-
 void			base64_decrypt(t_crypt_info *crypt_info);
 
 /*
 ** ft_base64_decrypt_operations.c
 */
-
 void			base64_decrypt_operations(unsigned char *decrypt_text,
 											t_crypt_info *crypt_info);
 unsigned char	*base64_decrypt_alghoritm(unsigned char *crypt_text,
 										   unsigned int data_len);
 void			base64_trim_decode(char *str);
-
-
+int				four_to_three(unsigned char *str, unsigned char *enc, char *key);
+int				copy_over(unsigned char *c, unsigned char *e, unsigned char *s);
 
 /*
 ** ft_base64_operations.c
 */
-
 void			base64(t_crypt_info *crypt_info);
 void			base64_operations(t_crypt_info *crypt_info);
 

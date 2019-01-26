@@ -20,7 +20,13 @@ stdarg.h
 ../global/ft_global.h
 /Users/omakovsk/Documents/ft_ssl/global/ft_global.h
 
-/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_read_text.c
+/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_des.h
+../global/ft_global.h
+/Users/omakovsk/Documents/ft_ssl/global/ft_global.h
+
+/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_des_cbc_encrypt.c
+ft_des.h
+/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_des.h
 ft_crypt_operations.h
 /Users/omakovsk/Documents/ft_ssl/crypt_src/ft_crypt_operations.h
 

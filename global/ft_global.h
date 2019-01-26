@@ -80,7 +80,7 @@ typedef	struct 		s_crypt_flags
 	uint8_t 		o;
 	char			*output_file;
 	uint8_t			p;
-	unsigned char	*password;
+	char			*password;
 	uint8_t			s;
 	unsigned char	*salt;
 	uint8_t			v;

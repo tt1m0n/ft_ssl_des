@@ -6,9 +6,11 @@ void            base64_encrypt_operations(unsigned char *crypt_text,
     unsigned char *result;
 
     result = base64_encrypt_alghoritm(crypt_text, crypt_info->data_len);
-    base64_result_output(result, crypt_info, ft_strlen((char*)result));
     if (result)
-        free(result);
+    {
+		base64_result_output(result, crypt_info, ft_strlen((char *) result));
+		free(result);
+	}
 }
 
 unsigned char 	*base64_encrypt_alghoritm(unsigned char *crypt_text,

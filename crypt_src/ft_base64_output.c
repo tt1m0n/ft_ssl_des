@@ -15,7 +15,7 @@ void    base64_result_output(unsigned char *result,
 			while (i <= len)
 			{
 				write(1, result, 1);
-				if ((i % 64) == 0)
+				if ((i % 64) == 0 && i + 1 <= len)
 					write(1, "\n", 1);
 				i++;
 				result++;

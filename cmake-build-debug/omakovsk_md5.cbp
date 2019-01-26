@@ -84,12 +84,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/base64_decrypt_operations.c">
-			<Option target="ft_ssl"/>
-		</Unit>
-		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/base_encrypt_operations.c">
-			<Option target="ft_ssl"/>
-		</Unit>
 		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_add_flags1.c">
 			<Option target="ft_ssl"/>
 		</Unit>
@@ -102,7 +96,13 @@
 		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_base64_decrypt.c">
 			<Option target="ft_ssl"/>
 		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_base64_decrypt_operations.c">
+			<Option target="ft_ssl"/>
+		</Unit>
 		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_base64_encrypt.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_base64_encrypt_operations.c">
 			<Option target="ft_ssl"/>
 		</Unit>
 		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_base64_operations.c">
@@ -118,6 +118,12 @@
 			<Option target="ft_ssl"/>
 		</Unit>
 		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_des.h">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_des_cbc.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_des_cbc_align_input.c">
 			<Option target="ft_ssl"/>
 		</Unit>
 		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_des_operations.c">

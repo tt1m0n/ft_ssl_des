@@ -19,7 +19,7 @@ void			crypt_info_operations(char **argv, t_crypt_info *crypt_info)
 		des_operations(crypt_info);
 }
 
-unsigned char	*read_base64_crypt_text(t_crypt_info *crypt_info)
+unsigned char	*read_crypt_text(t_crypt_info *crypt_info)
 {
 	int fd;
 
@@ -27,18 +27,62 @@ unsigned char	*read_base64_crypt_text(t_crypt_info *crypt_info)
 	if (crypt_info->flags.input_file)
 		fd = open(crypt_info->flags.input_file, O_RDONLY);
 	if (fd == -1)
+	{
 		ft_printf("%s: Noo such file or directory\n",
 				  crypt_info->flags.input_file);
+		return NULL;
+	}
 	if (read(fd, NULL, 0) == -1)
+	{
 		ft_printf("%s: Is a directory\n", crypt_info->flags.input_file);
+		return NULL;
+	}
 	return take_crypt_text_from_output(fd, crypt_info);
 }
 
-int		ft_isspace(int c)
+int				ft_isspace(int c)
 {
 	if (c == ' ' || c == '\n' || c == '\t')
 		return (1);
 	if (c == '\v' || c == '\f' || c == '\r')
 		return (1);
 	return (0);
+}
+
+int				ft_strcmp_unsigned(const unsigned char *s1, const unsigned char *s2)
+{
+	int i;
+
+	i = 0;
+	while (s1[i] == s2[i])
+	{
+		if (s1[i++] == '\0')
+			return (0);
+	}
+	return (s1[i] - s2[i]);
+}
+
+void 			get_cbc_encrypt_password(t_crypt_info *crypt_info)
+{
+	char *temp;
+
+	if (crypt_info->flags.password || crypt_info->flags.k)
+		return;
+	temp = getpass("enter des-cbc encryption password:");
+	crypt_info->flags.password = ft_strnew(ft_strlen(temp) + 1);
+	ft_strcpy(crypt_info->flags.password, temp);
+	temp = getpass("Verifying - enter des-cbc encryption password:");
+	if (!crypt_info->flags.password[0] && !temp[0])
+	{
+		free(crypt_info->flags.password);
+		crypt_info->flags.password = NULL;
+		return;
+	}
+	if (ft_strcmp(crypt_info->flags.password, temp))
+	{
+		free(crypt_info->flags.password);
+		crypt_info->flags.password = NULL;
+		ft_printf("Verify failure\nbad password read\n");
+		return;
+	}
 }
