@@ -120,13 +120,28 @@
 		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_des.h">
 			<Option target="ft_ssl"/>
 		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_des_block_operation.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_des_block_permutation.c">
+			<Option target="ft_ssl"/>
+		</Unit>
 		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_des_cbc.c">
 			<Option target="ft_ssl"/>
 		</Unit>
 		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_des_cbc_align_input.c">
 			<Option target="ft_ssl"/>
 		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_des_common_block_operation.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_des_key_operation.c">
+			<Option target="ft_ssl"/>
+		</Unit>
 		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_des_operations.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_des_output.c">
 			<Option target="ft_ssl"/>
 		</Unit>
 		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_des_validate_hex.c">

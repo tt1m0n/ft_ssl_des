@@ -17,6 +17,7 @@ void			crypt_info_operations(char **argv, t_crypt_info *crypt_info)
 		base64_operations(crypt_info);
 	else
 		des_operations(crypt_info);
+	// check maybe need to free crypt_info struct
 }
 
 unsigned char	*read_crypt_text(t_crypt_info *crypt_info)
