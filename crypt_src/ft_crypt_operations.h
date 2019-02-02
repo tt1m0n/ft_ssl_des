@@ -17,8 +17,9 @@ size_t			ft_strlen_unsigned(const unsigned char *s);
 void			crypt_info_operations(char **argv, t_crypt_info *crypt_info);
 unsigned char	*read_crypt_text(t_crypt_info *crypt_info);
 int				ft_isspace(int c);
-void 			get_cbc_encrypt_password(t_crypt_info *crypt_info);
-int				ft_strcmp_unsigned(const unsigned char *s1, const unsigned char *s2);
+void 			get_crypt_password(t_crypt_info *crypt_info);
+void			get_crypt_key(t_crypt_info *crypt_info);
+
 
 
 #endif

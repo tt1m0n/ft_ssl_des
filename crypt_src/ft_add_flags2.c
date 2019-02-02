@@ -54,8 +54,8 @@ int		add_v_flag(char ***argv, t_crypt_info *info)
 		print_crypt_flags_usage(NULL, info->crypt_type);
 		return (0);
 	}
-	info->flags.salt = get_hex_string(**argv, DES_IV_VECTOR_LEN);
-	if (!info->flags.salt)
+	info->flags.in_vector = get_hex_string(**argv, DES_IV_VECTOR_LEN);
+	if (!info->flags.in_vector)
 	{
 		ft_printf("invalid hex iv value\n");
 		return (0);

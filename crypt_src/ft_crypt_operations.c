@@ -50,24 +50,11 @@ int				ft_isspace(int c)
 	return (0);
 }
 
-int				ft_strcmp_unsigned(const unsigned char *s1, const unsigned char *s2)
-{
-	int i;
-
-	i = 0;
-	while (s1[i] == s2[i])
-	{
-		if (s1[i++] == '\0')
-			return (0);
-	}
-	return (s1[i] - s2[i]);
-}
-
-void 			get_cbc_encrypt_password(t_crypt_info *crypt_info)
+void 			get_crypt_password(t_crypt_info *crypt_info)
 {
 	char *temp;
 
-	if (crypt_info->flags.password || crypt_info->flags.k)
+	if (crypt_info->flags.p || crypt_info->flags.k)
 		return;
 	temp = getpass("enter des-cbc encryption password:");
 	crypt_info->flags.password = ft_strnew(ft_strlen(temp) + 1);
@@ -86,4 +73,16 @@ void 			get_cbc_encrypt_password(t_crypt_info *crypt_info)
 		ft_printf("Verify failure\nbad password read\n");
 		return;
 	}
+}
+
+void		get_crypt_key(t_crypt_info *crypt_info)
+{
+	if (crypt_info->flags.k)
+		return;
+	if (!crypt_info->flags.p)
+		get_crypt_password(crypt_info);
+	if (!crypt_info->flags.password)
+		return;
+	// here need get salt and other operation
+	// see https://github.com/ElliotFriedman/ft_ssl_des/tree/master/des
 }

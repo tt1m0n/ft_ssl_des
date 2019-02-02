@@ -25,8 +25,8 @@ unsigned char	*des_common_block(unsigned char *block,
 		i++;
 	}
 	free(block);
-	block = raw_append(right, left, 4, 4);
-	des_final_perm(block);
+	block = append(right, left, 4, 4);
+	des_final_permutation(block);
 	return (block);
 }
 
@@ -43,4 +43,13 @@ unsigned char	*create_same(unsigned char *block, unsigned int len)
 		i++;
 	}
 	return (new);
+}
+
+void	swap_ptr(void **a, void **b)
+{
+	void	*temp;
+
+	temp = *a;
+	*a = *b;
+	*b = temp;
 }

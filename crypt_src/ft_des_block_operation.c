@@ -45,11 +45,3 @@ void			data_xor(unsigned char *str,
 		i++;
 	}
 }
-
-void			cbc_pre_block(t_crypt_info *crypt_info, unsigned char *block)
-{
-	if (!crypt_info->flags.d)
-	{
-		data_xor(block, crypt_info->flags.in_vector, 8);
-	}
-}

@@ -12,9 +12,8 @@ void	des_crypt(t_crypt_info *crypt_info)
 		ft_printf("iv undefined\n");
 		return;
 	}
-	get_cbc_encrypt_password(crypt_info);
-	// after encrypt password must be pass, even if was k and v args (delete checking to k)
-	if (!crypt_info->flags.password && !crypt_info->flags.k)
+	get_crypt_key(crypt_info);
+	if (!crypt_info->flags.key)
 		return;
 	crypt = read_crypt_text(crypt_info);
 	if (crypt && crypt_info->flags.d && crypt_info->flags.a)
@@ -74,15 +73,3 @@ void			des_message(t_crypt_info *crypt_info, unsigned char **text)
 	des_pad(crypt_info, i, done, text);
 }
 
-void			cbc_post_block(t_crypt_info *crypt_info, unsigned char *block,
-							unsigned int i, unsigned char *text)
-{
-	if (crypt_info->flags.d)
-	{
-		data_xor(block, crypt_info->flags.in_vector, 8);
-		free(crypt_info->flags.in_vector);
-		crypt_info->flags.in_vector = create_same(&(text[i - 8]), 8);
-	}
-	else
-		crypt_info->flags.in_vector = create_same(block, 8);
-}

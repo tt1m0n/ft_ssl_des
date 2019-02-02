@@ -6,6 +6,114 @@
 #define DES_KEY_LEN 8
 #define DES_IV_VECTOR_LEN 8
 
+/*
+** ft_des_operations.c
+*/
+void				des(t_crypt_info *crypt_info);
+void				des_ecb(t_crypt_info *crypt_info);
+void				des_cbc(t_crypt_info *crypt_info);
+void				des_operations(t_crypt_info *crypt_info);
+
+/*
+** ft_des_validate_key.c
+*/
+unsigned char		*get_hex_string(char *argv, int len);
+unsigned char		*des_rewrite(unsigned char *key);
+int 				is_hex_string(unsigned char *str);
+unsigned char		get_hex_val(unsigned char first, unsigned char second);
+int					is_hex_char(char c);
+
+/*
+** ft_des.c
+*/
+void 				des_crypt(t_crypt_info *crypt_info);
+void				des_message(t_crypt_info *crypt_info,
+									unsigned char **text);
+void				des_action(t_crypt_info *crypt_info,
+									unsigned char *crypt);
+
+/*
+** ft_des_align_input.c
+*/
+void				des_align_input(unsigned char **crypt_text,
+									t_crypt_info *crypt_info);
+unsigned char		*append(unsigned char *crypt_text, unsigned char *padding,
+						 	unsigned int data_len, unsigned int alignment);
+unsigned char		*expand(unsigned char *crypt_text, unsigned char *padding,
+							unsigned int data_len, unsigned int alignment);
+
+/*
+** ft_des_output.c
+*/
+void				des_cbc_result_output(t_crypt_info *crypt_info,
+											unsigned char *result);
+void    			write_des_to_file(unsigned char *result, t_crypt_info *crypt_info);
+
+/*
+** ft_des_key_operation.c
+*/
+unsigned char		*des_key_reduction(unsigned char *key, int it);
+void				des_key_r_rotation(unsigned char *key, int num);
+void				des_key_l_rotation(unsigned char *key, int num);
+unsigned char		*des_get_subkey(unsigned char *key);
+
+
+/*
+** ft_des_block_operation.c
+*/
+unsigned char		*set_block(unsigned char *str,
+							unsigned int i, unsigned int len);
+void				data_copy(unsigned char *dst,
+							unsigned char *src, unsigned int len);
+void				data_xor(unsigned char *str,
+						 	unsigned char *vector, unsigned int len);
+
+
+/*
+** ft_des_common_block_operation.c
+*/
+unsigned char		*des_common_block(unsigned char *block,
+								   unsigned char *key, int d);
+unsigned char		*create_same(unsigned char *block, unsigned int len);
+void				swap_ptr(void **a, void **b);
+
+/*
+** ft_des_block_permutation.c
+*/
+unsigned char		set_init_byte(unsigned char *res, unsigned char pos);
+void				des_init_permutation(unsigned char *eight);
+unsigned char		set_final_byte(unsigned char *eight, unsigned int row);
+void				des_final_permutation(unsigned char *eight);
+
+/*
+** ft_des_round.c
+*/
+void				des_round(unsigned char *left,
+						unsigned char *right, unsigned char *subkey);
+unsigned char		des_expansion(unsigned char fourth_byte);
+unsigned char		*des_expansion_perm(unsigned char *right);
+unsigned char		*des_pbox_perm(unsigned char *str);
+
+/*
+** ft_des_sbox.c
+*/
+unsigned char		des_sbox(unsigned char sixbits, unsigned char *box);
+unsigned char		*des_sbox_sub(unsigned char *six);
+
+/*
+** ft_pad.c
+*/
+void				des_pad(t_crypt_info *crypt_info, unsigned int i,
+								unsigned char *str, unsigned char **text);
+void				handle_decode(t_crypt_info *crypt_info,
+								unsigned int len, unsigned char *text);
+
+/*
+** ft_cbc_pre_post_block.c
+*/
+void				cbc_post_block(t_crypt_info *crypt_info, unsigned char *block,
+								   unsigned int i, unsigned char *text);
+void				cbc_pre_block(t_crypt_info *crypt_info, unsigned char *block);
 
 static unsigned char	g_des_sbox_1[64] = {
 		14, 4, 13, 1, 2, 15, 11, 8, 3, 10, 6, 12, 5, 9, 0, 7,
@@ -52,82 +160,5 @@ static int				g_des_key_enc[16] = {
 		1, 1, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 1};
 static int				g_des_key_dec[16] = {
 		0, 1, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 1};
-
-/*
-** ft_des_operations.c
-*/
-void				des(t_crypt_info *crypt_info);
-void				des_ecb(t_crypt_info *crypt_info);
-void				des_cbc(t_crypt_info *crypt_info);
-void				des_operations(t_crypt_info *crypt_info);
-
-/*
-** ft_des_validate_key.c
-*/
-unsigned char		*get_hex_string(char *argv, int len);
-unsigned char		*des_rewrite(unsigned char *key);
-int 				is_hex_string(unsigned char *str);
-unsigned char		get_hex_val(unsigned char first, unsigned char second);
-int					is_hex_char(char c);
-
-/*
-** ft_des_cbc.c
-*/
-void 				des_cbc_crypt(t_crypt_info *crypt_info);
-void				des_cbc_message(t_crypt_info *crypt_info,
-									unsigned char **text);
-void				des_cbc_action(t_crypt_info *crypt_info,
-									unsigned char *crypt);
-
-/*
-** ft_des_cbc_align_input.c
-*/
-void				des_align_input(unsigned char **crypt_text,
-									t_crypt_info *crypt_info);
-unsigned char		*append(unsigned char *crypt_text, unsigned char *padding,
-						 	unsigned int data_len, unsigned int alignment);
-unsigned char		*expand(unsigned char *crypt_text, unsigned char *padding,
-							unsigned int data_len, unsigned int alignment);
-
-/*
-** ft_des_output.c
-*/
-void				des_cbc_result_output(t_crypt_info *crypt_info,
-											unsigned char *result);
-void    			write_des_to_file(unsigned char *result, size_t length,
-											char *filename, uint8_t is_decode);
-
-/*
-** ft_des_key_operation.c
-*/
-unsigned char		*des_key_reduction(unsigned char *key, int it);
-void				des_key_r_rotation(unsigned char *key, int num);
-void				des_key_l_rotation(unsigned char *key, int num);
-unsigned char		*des_get_subkey(unsigned char *key);
-
-
-/*
-** ft_des_block_operation.c
-*/
-unsigned char	*set_block(unsigned char *str,
-							unsigned int i, unsigned int len);
-void			data_copy(unsigned char *dst,
-							unsigned char *src, unsigned int len);
-void			cbc_pre_block(t_crypt_info *crypt_info, unsigned char *block);
-
-
-/*
-** ft_des_common_block_operation.c
-*/
-unsigned char	*des_common_block(unsigned char *block,
-								   unsigned char *key, int d);
-unsigned char	*create_same(unsigned char *block, unsigned int len);
-
-/*
-** ft_des_block_permutation.c
-*/
-void			des_init_permutation(unsigned char *eight);
-
-
 
 #endif
