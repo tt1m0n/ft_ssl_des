@@ -2,7 +2,7 @@
 #include "ft_base64.h"
 #include "ft_crypt_operations.h"
 
-void	des_cbc_crypt(t_crypt_info *crypt_info)
+void	des_crypt(t_crypt_info *crypt_info)
 {
 	unsigned char	*temp;
 	unsigned char	*crypt;
@@ -26,17 +26,17 @@ void	des_cbc_crypt(t_crypt_info *crypt_info)
 	if (!crypt)
 		return;
 	des_align_input(&crypt, crypt_info);
-	if (!crypt_info->flags.d || ((crypt_info->crypt_type % 8) == 0))
-		des_cbc_action(crypt_info, crypt);
+	if (!crypt_info->flags.d || ((crypt_info->data_len % 8) == 0))
+		des_action(crypt_info, crypt);
 	else
 		ft_printf("Message not multiple of block length\n");
 }
 
-void	des_cbc_action(t_crypt_info *crypt_info, unsigned char *crypt_text)
+void	des_action(t_crypt_info *crypt_info, unsigned char *crypt_text)
 {
 	unsigned char	*temp;
 
-	des_cbc_message(crypt_info, &crypt_text);
+	des_message(crypt_info, &crypt_text);
 	if (crypt_info->flags.a && !crypt_info->flags.d)
 	{
 		temp = base64_encrypt_alghoritm(crypt_text, crypt_info->data_len);
@@ -49,7 +49,7 @@ void	des_cbc_action(t_crypt_info *crypt_info, unsigned char *crypt_text)
 		free(crypt_text);
 }
 
-void			des_cbc_message(t_crypt_info *crypt_info, unsigned char **text)
+void			des_message(t_crypt_info *crypt_info, unsigned char **text)
 {
 	unsigned char	*done;
 	unsigned char	*block;
@@ -61,14 +61,28 @@ void			des_cbc_message(t_crypt_info *crypt_info, unsigned char **text)
 	while (i < crypt_info->data_len)
 	{
 		subkey = des_key_reduction(crypt_info->flags.key, -1);
-		block = set_block(&(*text[i]), i, crypt_info->data_len);
+		block = set_block(&(*text)[i], i, crypt_info->data_len);
 		i += 8;
-		cbc_pre_block(crypt_info, block);
+		if (crypt_info->cryptptr == des || crypt_info->cryptptr == des_cbc)
+			cbc_pre_block(crypt_info, block);
 		block = des_common_block(block, subkey, crypt_info->flags.d);
-		cbc_post_block(data, block, i);
-		done = raw_append(done, block, i - 8, 8);
+		if (crypt_info->cryptptr == des || crypt_info->cryptptr == des_cbc)
+			cbc_post_block(crypt_info, block, i, *text);
+		done = append(done, block, i - 8, 8);
 		free(subkey);
 	}
-	des_pad(data, i, done);
+	des_pad(crypt_info, i, done, text);
 }
 
+void			cbc_post_block(t_crypt_info *crypt_info, unsigned char *block,
+							unsigned int i, unsigned char *text)
+{
+	if (crypt_info->flags.d)
+	{
+		data_xor(block, crypt_info->flags.in_vector, 8);
+		free(crypt_info->flags.in_vector);
+		crypt_info->flags.in_vector = create_same(&(text[i - 8]), 8);
+	}
+	else
+		crypt_info->flags.in_vector = create_same(block, 8);
+}

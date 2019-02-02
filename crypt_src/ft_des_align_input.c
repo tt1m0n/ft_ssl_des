@@ -7,10 +7,11 @@ void			des_align_input(unsigned char **crypt_text, t_crypt_info *crypt_info)
 	unsigned int	alignment;
 	unsigned int	i;
 
+	crypt_info->data_len = (unsigned)ft_strlen_unsigned(*crypt_text);
+
 	if (crypt_info->flags.d)
 		return;
 
-	crypt_info->data_len = (unsigned)ft_strlen_unsigned(*crypt_text);
 	alignment = 8 - (crypt_info->data_len % 8);
 	padding = (unsigned char *)ft_strnew(alignment);
 	i = 0;
