@@ -1,62 +1,44 @@
 #include "ft_crypt_operations.h"
 
+static char		*append_data(char *str, char *buff, unsigned int l,
+								unsigned int r)
+{
+	char			*final;
+	unsigned int	i;
+
+	final = ft_strnew(l + r);
+	i = 0;
+	while (i < l)
+	{
+		final[i] = str[i];
+		i++;
+	}
+	i = 0;
+	while (i < r)
+	{
+		final[i + l] = buff[i];
+		i++;
+	}
+	free(str);
+	return (final);
+}
+
 unsigned char	*take_crypt_text_from_output(int fd, t_crypt_info *crypt_info)
 {
-	unsigned char	*need_to_crypt;
-	unsigned char	*tmp_buffer;
-	unsigned char	*ptr_to_free;
+	char			*need_to_crypt;
+	char			tmp_buffer[BUFFER_SIZE + 1];
 	unsigned int    ret_len;
 
-	need_to_crypt = ft_memalloc(1);
-	tmp_buffer = ft_memalloc(BUFFER_SIZE);
-	while ((ret_len = read(fd, (void*)tmp_buffer, BUFFER_SIZE - 1)) > 0)
+	ft_bzero(tmp_buffer, sizeof(char) * BUFFER_SIZE + 1);
+	need_to_crypt = ft_strnew(0);
+	while ((ret_len = read(fd, tmp_buffer, BUFFER_SIZE)) > 0)
 	{
-		ptr_to_free = need_to_crypt;
-		need_to_crypt = ft_strjoin_unsigned(need_to_crypt, tmp_buffer);
-		free(ptr_to_free);
-		ft_memset(tmp_buffer, 0, BUFFER_SIZE);
+		need_to_crypt = append_data(need_to_crypt, tmp_buffer,
+				crypt_info->data_len, ret_len);
 		crypt_info->data_len += ret_len;
+		ft_bzero(tmp_buffer, sizeof(char) * BUFFER_SIZE + 1);
 	}
-	free(tmp_buffer);
 	if (fd)
 		close(fd);
-	return (need_to_crypt);
-}
-
-unsigned char	*ft_strjoin_unsigned(unsigned char const *s1,
-									unsigned char const *s2)
-{
-	int		        i;
-	unsigned char	*p;
-
-	i = 0;
-	if ((s1 == NULL) || (s2 == NULL))
-		return (NULL);
-	p = (unsigned char*)malloc(ft_strlen_unsigned(s1) + ft_strlen_unsigned(s2) + 1);
-	if (p == NULL)
-		return (NULL);
-	while (*s1 != '\0')
-	{
-		p[i] = *s1;
-		s1++;
-		i++;
-	}
-	while (*s2 != '\0')
-	{
-		p[i] = *s2;
-		i++;
-		s2++;
-	}
-	p[i] = '\0';
-	return (p);
-}
-
-size_t			ft_strlen_unsigned(const unsigned char *s)
-{
-	size_t i;
-
-	i = 0;
-	while (s[i] != '\0')
-		i++;
-	return (i);
+	return ((unsigned char*)need_to_crypt);
 }

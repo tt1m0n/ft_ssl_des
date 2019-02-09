@@ -34,11 +34,16 @@ int		add_s_flag(char ***argv, t_crypt_info *info)
 {
 	info->flags.s = 1;
 	(*argv)++;
-	info->flags.salt = (unsigned char*)**argv;
+	if (!**argv)
+	{
+		ft_printf("missing salt argument for -k\n\n");
+		print_crypt_flags_usage(NULL, info->crypt_type);
+		return (0);
+	}
+	info->flags.salt = get_hex_string(**argv, DES_KEY_LEN);
 	if (!info->flags.salt)
 	{
-		ft_printf("missing salt argument for -s\n\n");
-		print_crypt_flags_usage(NULL, info->crypt_type);
+		ft_printf("invalid salt value\n");
 		return (0);
 	}
 	return (1);

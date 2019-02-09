@@ -74,15 +74,3 @@ void 			get_crypt_password(t_crypt_info *crypt_info)
 		return;
 	}
 }
-
-void		get_crypt_key(t_crypt_info *crypt_info)
-{
-	if (crypt_info->flags.k)
-		return;
-	if (!crypt_info->flags.p)
-		get_crypt_password(crypt_info);
-	if (!crypt_info->flags.password)
-		return;
-	// here need get salt and other operation
-	// see https://github.com/ElliotFriedman/ft_ssl_des/tree/master/des
-}

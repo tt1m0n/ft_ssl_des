@@ -141,6 +141,9 @@
 		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_des_key_operation.c">
 			<Option target="ft_ssl"/>
 		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_des_key_operations1.c">
+			<Option target="ft_ssl"/>
+		</Unit>
 		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_des_operations.c">
 			<Option target="ft_ssl"/>
 		</Unit>
@@ -151,6 +154,9 @@
 			<Option target="ft_ssl"/>
 		</Unit>
 		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_des_round.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_des_salt_operation.c">
 			<Option target="ft_ssl"/>
 		</Unit>
 		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_des_sbox.c">

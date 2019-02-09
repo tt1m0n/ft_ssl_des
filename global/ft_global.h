@@ -24,7 +24,7 @@
 
 # define USAGE_STRING "usage: ft_ssl command [command opts] [command args]\n"
 # define STDIN ""
-# define BUFFER_SIZE 512
+# define BUFFER_SIZE 64
 # define UNKNOWN_FLAG 2
 # define START_VALUE  0
 
@@ -81,6 +81,8 @@ typedef	struct 		s_crypt_flags
 	char			*output_file;
 	uint8_t			p;
 	char			*password;
+	size_t			pass_len;
+	size_t			temp_len;
 	uint8_t			s;
 	unsigned char	*salt;
 	uint8_t			v;
@@ -93,7 +95,29 @@ typedef struct 	    s_crypt_info
 	void (*cryptptr)(struct s_crypt_info *crypt_info);
 	t_crypt_flags	flags;
     unsigned int	data_len;
+	unsigned int	*salt_help;
+
 }				    t_crypt_info;
+
+typedef struct			s_key_help
+{
+	unsigned int		first;
+	unsigned int		second;
+	unsigned int		third;
+	unsigned int		fourth;
+}						t_key_help;
+
+typedef struct			s_iter
+{
+	unsigned int		first;
+	unsigned int		second;
+	unsigned int		third;
+	unsigned int		fourth;
+	unsigned int		fifth;
+	unsigned int		i;
+	unsigned int		g;
+	unsigned int		d;
+}						t_iter;
 
 typedef void	(*t_crypt_ptr)(t_crypt_info *crypt_info);
 typedef int		(*t_add_flag_ptr)(char***, t_crypt_info*);

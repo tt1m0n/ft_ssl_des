@@ -92,6 +92,12 @@ CMakeFiles/ft_ssl.dir/crypt_src/ft_des_key_operation.c.o: ../crypt_src/ft_des.h
 CMakeFiles/ft_ssl.dir/crypt_src/ft_des_key_operation.c.o: ../crypt_src/ft_des_key_operation.c
 CMakeFiles/ft_ssl.dir/crypt_src/ft_des_key_operation.c.o: ../global/ft_global.h
 
+CMakeFiles/ft_ssl.dir/crypt_src/ft_des_key_operations1.c.o: ../libft/libft.h
+CMakeFiles/ft_ssl.dir/crypt_src/ft_des_key_operations1.c.o: ../crypt_src/ft_crypt_operations.h
+CMakeFiles/ft_ssl.dir/crypt_src/ft_des_key_operations1.c.o: ../crypt_src/ft_des.h
+CMakeFiles/ft_ssl.dir/crypt_src/ft_des_key_operations1.c.o: ../crypt_src/ft_des_key_operations1.c
+CMakeFiles/ft_ssl.dir/crypt_src/ft_des_key_operations1.c.o: ../global/ft_global.h
+
 CMakeFiles/ft_ssl.dir/crypt_src/ft_des_operations.c.o: ../libft/libft.h
 CMakeFiles/ft_ssl.dir/crypt_src/ft_des_operations.c.o: ../crypt_src/ft_des.h
 CMakeFiles/ft_ssl.dir/crypt_src/ft_des_operations.c.o: ../crypt_src/ft_des_operations.c
@@ -111,6 +117,11 @@ CMakeFiles/ft_ssl.dir/crypt_src/ft_des_round.c.o: ../libft/libft.h
 CMakeFiles/ft_ssl.dir/crypt_src/ft_des_round.c.o: ../crypt_src/ft_des.h
 CMakeFiles/ft_ssl.dir/crypt_src/ft_des_round.c.o: ../crypt_src/ft_des_round.c
 CMakeFiles/ft_ssl.dir/crypt_src/ft_des_round.c.o: ../global/ft_global.h
+
+CMakeFiles/ft_ssl.dir/crypt_src/ft_des_salt_operation.c.o: ../libft/libft.h
+CMakeFiles/ft_ssl.dir/crypt_src/ft_des_salt_operation.c.o: ../crypt_src/ft_des.h
+CMakeFiles/ft_ssl.dir/crypt_src/ft_des_salt_operation.c.o: ../crypt_src/ft_des_salt_operation.c
+CMakeFiles/ft_ssl.dir/crypt_src/ft_des_salt_operation.c.o: ../global/ft_global.h
 
 CMakeFiles/ft_ssl.dir/crypt_src/ft_des_sbox.c.o: ../libft/libft.h
 CMakeFiles/ft_ssl.dir/crypt_src/ft_des_sbox.c.o: ../crypt_src/ft_des.h
