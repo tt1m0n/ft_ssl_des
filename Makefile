@@ -20,6 +20,7 @@ all: $(NAME)
 $(NAME): objectdir
 	@make -C libft
 	@make -C hash_src
+	@make -C crypt_src
 	@ar rc $(LIBNAME) $(OBJ)
 	@gcc $(FLAGS) $(LIBNAME) -o $(NAME) 
 	@echo "\033[35m --------- ready ------------\033[0m"
@@ -29,7 +30,9 @@ objectdir:
 
 clean:
 	@make clean -C libft
-	@make clean -C md5_src
+	@make clean -C hash_src
+	@make clean -C global
+	@make clean -C crypt_src
 	@rm -rf objects
 
 fclean: clean

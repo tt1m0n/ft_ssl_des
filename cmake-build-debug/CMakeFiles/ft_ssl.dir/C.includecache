@@ -6,16 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../libft/libft.h
-string.h
--
-stdlib.h
--
-unistd.h
--
-stdarg.h
--
-
 /Users/omakovsk/Documents/ft_ssl/crypt_src/ft_base64.h
 ../global/ft_global.h
 /Users/omakovsk/Documents/ft_ssl/global/ft_global.h
@@ -24,23 +14,13 @@ stdarg.h
 ../global/ft_global.h
 /Users/omakovsk/Documents/ft_ssl/global/ft_global.h
 
-/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_des.h
-../global/ft_global.h
-/Users/omakovsk/Documents/ft_ssl/global/ft_global.h
-
-/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_des_key_operations1.c
-ft_des.h
-/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_des.h
-ft_crypt_operations.h
-/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_crypt_operations.h
-
 /Users/omakovsk/Documents/ft_ssl/crypt_src/ft_flags_operations.h
 ../global/ft_global.h
 /Users/omakovsk/Documents/ft_ssl/global/ft_global.h
 
 /Users/omakovsk/Documents/ft_ssl/global/ft_global.h
-libft.h
-/Users/omakovsk/Documents/ft_ssl/global/libft.h
+../libft/libft.h
+/Users/omakovsk/Documents/ft_ssl/libft/libft.h
 fcntl.h
 -
 
