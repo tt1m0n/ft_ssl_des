@@ -13,7 +13,7 @@
 #ifndef FT_DES_H
 # define FT_DES_H
 
-# include "../global/ft_global.h"
+# include "ft_global.h"
 
 # define DES_KEY_LEN 24
 # define DES_IV_VECTOR_LEN 8
@@ -82,8 +82,7 @@ void				write_des_to_file(unsigned char *result,
 ** ft_print_show_des.c
 */
 void				ft_print_show(t_crypt_info *crypt_info);
-void				ft_print_hex(t_crypt_info *crypt_info,
-							unsigned char *str, int len);
+void				ft_print_hex(unsigned char *str, int len);
 
 /*
 ** ft_des_key_operation.c

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../global/ft_global.h"
+#include "ft_global.h"
 #include "ft_crypt_operations.h"
 #include "ft_des.h"
 

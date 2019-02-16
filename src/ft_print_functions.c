@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../global/ft_global.h"
+#include "ft_global.h"
 #include "ft_crypt_operations.h"
 
 int			print_crypt_flags_usage(char *argument, t_crypt_type crypt_type)

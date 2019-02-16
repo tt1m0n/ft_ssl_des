@@ -12,128 +12,104 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3626e7ef-30ae-4c1e-8531-1e9488421ebf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ft_base64_decrypt.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ft_base64_encrypt.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ft_base64_encrypt_operations.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ft_base64_operations.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ft_base64_output.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ft_cbc_pre_post_block.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ft_crypt_operations.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ft_des.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ft_des3_operations.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ft_des_align_input.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ft_des_block_operation.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ft_des_key_operations3.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ft_des_operations.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ft_des_output.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ft_des_pad.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ft_des_salt_operation.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ft_des_validate_hex.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ft_flags_operations.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ft_global.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ft_global.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ft_init_structs.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ft_main_hash_function.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ft_md5.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ft_md5.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ft_md5_instead_def.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ft_md5_rounds.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ft_parse_and_read.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ft_parse_and_read.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ft_print_functions.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ft_sha.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ft_sha.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ft_sha_384_512.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ft_sha_helpers.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/init_start_words.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/print_error.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_add_flags1.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_add_flags1.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_add_flags2.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_add_flags2.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_base64_decrypt.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_base64_decrypt.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_base64_decrypt_operations.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_base64_decrypt_operations.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_base64_encrypt.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_base64_encrypt.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_base64_encrypt_operations.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_base64_encrypt_operations.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_base64_operations.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_base64_operations.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_base64_output.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_base64_output.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_cbc_pre_post_block.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_cbc_pre_post_block.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_crypt_operations.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_crypt_operations.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des3.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des3.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des3_operations.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des3_operations.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_align_input.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_align_input.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_block_operation.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_block_operation.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_block_permutation.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_block_permutation.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_common_block_operation.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_common_block_operation.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_key_operations.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_key_operations.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_key_operations1.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_key_operations1.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_key_operations2.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_key_operations2.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_key_operations3.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_key_operations3.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_operations.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_operations.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_output.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_output.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_pad.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_pad.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_round.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_round.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_salt_operation.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_salt_operation.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_sbox.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_sbox.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_validate_hex.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_validate_hex.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_flags_operations.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_flags_operations.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_print_functions.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_print_functions.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_print_show_des.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_print_show_des.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_read_text.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_read_text.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_add_flags1.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_add_flags2.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_base64_decrypt.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_base64_decrypt_operations.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_base64_encrypt.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_base64_encrypt_operations.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_base64_operations.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_base64_output.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_cbc_pre_post_block.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_crypt_operations.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des3.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des3_operations.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_align_input.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_block_operation.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_block_permutation.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_common_block_operation.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_key_operations.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_key_operations1.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_key_operations2.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_key_operations3.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_operations.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_output.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_pad.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_round.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_salt_operation.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_sbox.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_des_validate_hex.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_flags_operations.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_print_functions.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_print_show_des.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/crypt_src/ft_read_text.c.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/global/ft_global.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/global/ft_global.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/global/print_error.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/global/print_error.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/hash_src/ft_md5.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/hash_src/ft_md5.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/hash_src/ft_parse_and_read.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/hash_src/ft_parse_and_read.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/hash_src/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/hash_src/main.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/global/ft_global.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/global/print_error.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/hash_src/ft_init_structs.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/hash_src/ft_main_hash_function.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/hash_src/ft_md5.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/hash_src/ft_md5_instead_def.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/hash_src/ft_md5_rounds.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/hash_src/ft_parse_and_read.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/hash_src/ft_sha.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/hash_src/ft_sha_384_512.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/hash_src/ft_sha_helpers.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/hash_src/init_start_words.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/hash_src/main.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ft_ssl.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/ft_ssl" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ft_ssl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypt_src/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/src/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypt_src/ft_add_flags1.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_add_flags1.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypt_src/ft_add_flags2.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_add_flags2.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypt_src/ft_base64.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_base64.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypt_src/ft_base64_decrypt.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypt_src/ft_base64_decrypt_operations.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_base64_decrypt_operations.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypt_src/ft_base64_encrypt.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypt_src/ft_base64_encrypt_operations.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypt_src/ft_base64_operations.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypt_src/ft_base64_output.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypt_src/ft_cbc_pre_post_block.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypt_src/ft_crypt_operations.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_crypt_operations.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypt_src/ft_crypt_operations.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypt_src/ft_des.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_des.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypt_src/ft_des.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypt_src/ft_des3.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_des3.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypt_src/ft_des3_operations.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypt_src/ft_des_align_input.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypt_src/ft_des_block_operation.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypt_src/ft_des_block_permutation.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_des_block_permutation.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypt_src/ft_des_common_block_operation.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_des_common_block_operation.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypt_src/ft_des_key_operations.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_des_key_operations.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypt_src/ft_des_key_operations1.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_des_key_operations1.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypt_src/ft_des_key_operations2.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_des_key_operations2.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypt_src/ft_des_key_operations3.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypt_src/ft_des_operations.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypt_src/ft_des_output.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypt_src/ft_des_pad.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypt_src/ft_des_round.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_des_round.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypt_src/ft_des_salt_operation.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypt_src/ft_des_sbox.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_des_sbox.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypt_src/ft_des_validate_hex.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypt_src/ft_flags_operations.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_flags_operations.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypt_src/ft_flags_operations.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypt_src/ft_print_functions.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypt_src/ft_print_show_des.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_print_show_des.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crypt_src/ft_read_text.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_read_text.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/global/ft_global.c" beforeDir="false" afterPath="$PROJECT_DIR$/global/ft_global.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/global/ft_global.h" beforeDir="false" afterPath="$PROJECT_DIR$/global/ft_global.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/global/print_error.c" beforeDir="false" afterPath="$PROJECT_DIR$/global/print_error.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hash_src/ft_main_hash_function.c" beforeDir="false" afterPath="$PROJECT_DIR$/hash_src/ft_main_hash_function.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hash_src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/hash_src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/omakovsk_md5.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/omakovsk_md5.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/global/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/global/ft_global.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/global/ft_global.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/global/print_error.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hash_src/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hash_src/ft_init_structs.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hash_src/ft_main_hash_function.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hash_src/ft_md5.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hash_src/ft_md5.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hash_src/ft_md5_instead_def.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hash_src/ft_md5_rounds.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hash_src/ft_parse_and_read.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hash_src/ft_parse_and_read.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hash_src/ft_sha.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hash_src/ft_sha.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hash_src/ft_sha_384_512.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hash_src/ft_sha_helpers.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hash_src/init_start_words.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hash_src/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/src/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_add_flags1.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_add_flags1.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_add_flags2.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_add_flags2.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_base64.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_base64.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_base64_decrypt_operations.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_base64_decrypt_operations.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_crypt_operations.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_crypt_operations.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_crypt_operations.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_crypt_operations.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_des.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_des.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_des.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_des.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_des3.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_des3.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_flags_operations.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_flags_operations.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_global.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_global.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_main_hash_function.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_main_hash_function.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_md5.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_md5.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_parse_and_read.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_parse_and_read.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_parse_and_read.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_parse_and_read.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_print_functions.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_print_functions.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_print_show_des.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_print_show_des.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ft_sha.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ft_sha.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/print_error.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/print_error.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -145,29 +121,41 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ft_des.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ft_crypt_operations.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="52" selection-start-line="52" selection-end-line="52" />
+              <folding>
+                <element signature="e#892#914#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ft_read_text.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="622">
+              <caret line="63" selection-start-line="63" selection-end-line="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hash_src/main.c">
+        <entry file="file://$PROJECT_DIR$/src/ft_des_operations.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ft_init_structs.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="20" column="20" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ft_add_flags1.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="795">
-              <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
+            <state relative-caret-position="330">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
@@ -191,6 +179,11 @@
       <find>revert_eight_bytes</find>
       <find>common</find>
       <find>get_he</find>
+      <find>main</find>
+      <find>global</find>
+      <find>globas</find>
+      <find>ft_bas</find>
+      <find>data_len</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -199,28 +192,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/crypt_src/ft_des_block_permutation.c" />
-        <option value="$PROJECT_DIR$/crypt_src/ft_des_pad.c" />
-        <option value="$PROJECT_DIR$/crypt_src/ft_des_cbc_align_input.c" />
-        <option value="$PROJECT_DIR$/crypt_src/ft_des_cbc.c" />
-        <option value="$PROJECT_DIR$/crypt_src/ft_cbc_pre_post_block.cpp" />
-        <option value="$PROJECT_DIR$/crypt_src/ft_salt_operation.c" />
-        <option value="$PROJECT_DIR$/crypt_src/ft_des_key_operations.cpp" />
-        <option value="$PROJECT_DIR$/libft/ft_printf.c" />
-        <option value="$PROJECT_DIR$/libft/ft_memalloc.c" />
-        <option value="$PROJECT_DIR$/global/print_error.c" />
-        <option value="$PROJECT_DIR$/crypt_src/ft_des_key_operation2.c" />
-        <option value="$PROJECT_DIR$/crypt_src/ft_des_key_operatioin2.c" />
-        <option value="$PROJECT_DIR$/crypt_src/ft_des3_operations.c" />
-        <option value="$PROJECT_DIR$/crypt_src/ft_print_show_des.c" />
-        <option value="$PROJECT_DIR$/hash_src/ft_md5.c" />
-        <option value="$PROJECT_DIR$/global/ft_global.c" />
-        <option value="$PROJECT_DIR$/crypt_src/ft_base64_decrypt.c" />
-        <option value="$PROJECT_DIR$/crypt_src/ft_base64.h" />
-        <option value="$PROJECT_DIR$/crypt_src/ft_base64_decrypt_operations.c" />
-        <option value="$PROJECT_DIR$/crypt_src/ft_base64_encrypt_operations.c" />
-        <option value="$PROJECT_DIR$/crypt_src/ft_base64_operations.c" />
-        <option value="$PROJECT_DIR$/crypt_src/ft_base64_output.c" />
         <option value="$PROJECT_DIR$/crypt_src/ft_cbc_pre_post_block.c" />
         <option value="$PROJECT_DIR$/crypt_src/ft_crypt_operations.c" />
         <option value="$PROJECT_DIR$/crypt_src/ft_crypt_operations.h" />
@@ -248,8 +219,30 @@
         <option value="$PROJECT_DIR$/global/ft_global.h" />
         <option value="$PROJECT_DIR$/global/Makefile" />
         <option value="$PROJECT_DIR$/crypt_src/Makefile" />
-        <option value="$PROJECT_DIR$/Makefile" />
         <option value="$PROJECT_DIR$/hash_src/main.c" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/ft_md5.h" />
+        <option value="$PROJECT_DIR$/src/ft_global.c" />
+        <option value="$PROJECT_DIR$/src/ft_sha.h" />
+        <option value="$PROJECT_DIR$/src/ft_main_hash_function.c" />
+        <option value="$PROJECT_DIR$/src/ft_parse_and_read.h" />
+        <option value="$PROJECT_DIR$/src/ft_parse_and_read.c" />
+        <option value="$PROJECT_DIR$/src/ft_add_flags1.c" />
+        <option value="$PROJECT_DIR$/src/main.c" />
+        <option value="$PROJECT_DIR$/src/ft_crypt_operations.h" />
+        <option value="$PROJECT_DIR$/src/ft_flags_operations.h" />
+        <option value="$PROJECT_DIR$/src/print_error.c" />
+        <option value="$PROJECT_DIR$/src/ft_crypt_operations.c" />
+        <option value="$PROJECT_DIR$/src/ft_print_functions.c" />
+        <option value="$PROJECT_DIR$/Makefile" />
+        <option value="$PROJECT_DIR$/src/ft_add_flags2.c" />
+        <option value="$PROJECT_DIR$/src/ft_base64.h" />
+        <option value="$PROJECT_DIR$/src/ft_base64_decrypt_operations.c" />
+        <option value="$PROJECT_DIR$/src/ft_des.c" />
+        <option value="$PROJECT_DIR$/src/ft_des3.c" />
+        <option value="$PROJECT_DIR$/src/ft_print_show_des.c" />
+        <option value="$PROJECT_DIR$/src/ft_des.h" />
+        <option value="$PROJECT_DIR$/src/Makefile" />
       </list>
     </option>
   </component>
@@ -276,7 +269,7 @@
             <path>
               <item name="omakovsk_md5" type="b2602c69:ProjectViewProjectNode" />
               <item name="ft_ssl" type="462c0819:PsiDirectoryNode" />
-              <item name="hash_src" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -319,7 +312,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="ft_ssl" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="des3-ecb -k 123456781234567812345678 -i file" PASS_PARENT_ENVS_2="true" PROJECT_NAME="omakovsk_md5" TARGET_NAME="ft_ssl" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="omakovsk_md5" RUN_TARGET_NAME="ft_ssl">
+    <configuration name="ft_ssl" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="des -p password -v 01 -s EB39F351F2120086 -i res -d " PASS_PARENT_ENVS_2="true" PROJECT_NAME="omakovsk_md5" TARGET_NAME="ft_ssl" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="omakovsk_md5" RUN_TARGET_NAME="ft_ssl">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -352,12 +345,13 @@
       <workItem from="1549092711799" duration="13425000" />
       <workItem from="1549705927067" duration="37993000" />
       <workItem from="1550302772721" duration="16940000" />
-      <workItem from="1550329140270" duration="11719000" />
+      <workItem from="1550329140270" duration="12827000" />
+      <workItem from="1550342986207" duration="1896000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="178605000" />
+    <option name="totallyTimeSpent" value="181609000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -370,9 +364,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1229" y="23" width="1305" height="1336" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27315915" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27711797" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -385,9 +378,9 @@
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.3062701" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32717043" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.28858522" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.329582" />
-      <window_info anchor="bottom" id="CMake" order="12" />
+      <window_info anchor="bottom" id="CMake" order="12" weight="0.329582" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -420,6 +413,15 @@
     <option name="version" value="1" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/ft_crypt_operations.c</url>
+          <line>36</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
         <watch expression="crypt" />
@@ -436,126 +438,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/global/print_error.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ft_base64_decrypt.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ft_base64.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="34" column="44" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ft_base64_decrypt_operations.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="58" column="16" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
-          <folding>
-            <element signature="e#892#914#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ft_base64_encrypt_operations.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="72" column="32" selection-start-line="72" selection-start-column="32" selection-end-line="72" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ft_base64_operations.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ft_base64_output.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="45" column="22" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ft_cbc_pre_post_block.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ft_crypt_operations.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="44" column="21" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
-          <folding>
-            <element signature="e#892#924#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ft_crypt_operations.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ft_des.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="65" column="8" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="8" />
-          <folding>
-            <element signature="e#892#911#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hash_src/ft_sha.c">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ft_des3.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
-          <folding>
-            <element signature="e#892#911#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ft_des3_operations.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ft_des_align_input.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="44" column="24" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ft_des_block_operation.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ft_des_common_block_operation.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="452">
@@ -594,13 +476,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ft_des_operations.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ft_des_output.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="512">
@@ -622,20 +497,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ft_add_flags2.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="50" column="54" lean-forward="true" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ft_des.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ft_des_validate_hex.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
@@ -650,96 +511,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ft_flags_operations.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ft_print_functions.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="45" column="65" selection-start-line="45" selection-start-column="65" selection-end-line="45" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ft_read_text.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="55" column="7" selection-start-line="55" selection-start-column="7" selection-end-line="55" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/author">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/hash_src/ft_main_hash_function.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding>
-            <element signature="e#892#924#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hash_src/ft_md5.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hash_src/ft_parse_and_read.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding>
-            <element signature="e#892#924#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hash_src/init_start_words.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding>
-            <element signature="e#892#911#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hash_src/ft_sha_helpers.c">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hash_src/ft_sha_384_512.c">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hash_src/ft_sha.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
-          <folding>
-            <element signature="e#928#956#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/global/ft_global.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="30" lean-forward="true" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-          <folding>
-            <element signature="e#934#962#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/hash_src/ft_main_hash_function.c" />
+    <entry file="file://$PROJECT_DIR$/hash_src/ft_md5.h" />
+    <entry file="file://$PROJECT_DIR$/hash_src/ft_parse_and_read.c" />
+    <entry file="file://$PROJECT_DIR$/hash_src/init_start_words.c" />
+    <entry file="file://$PROJECT_DIR$/hash_src/ft_sha_helpers.c" />
+    <entry file="file://$PROJECT_DIR$/hash_src/ft_sha_384_512.c" />
+    <entry file="file://$PROJECT_DIR$/hash_src/ft_sha.h" />
+    <entry file="file://$PROJECT_DIR$/global/ft_global.h" />
     <entry file="file://$PROJECT_DIR$/libft/Makefile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="855">
@@ -747,58 +529,220 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hash_src/Makefile">
+    <entry file="file://$PROJECT_DIR$/hash_src/Makefile" />
+    <entry file="file://$PROJECT_DIR$/global/ft_global.c" />
+    <entry file="file://$PROJECT_DIR$/global/Makefile" />
+    <entry file="file://$PROJECT_DIR$/hash_src/main.c" />
+    <entry file="file://$PROJECT_DIR$/src/ft_global.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/global/ft_global.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2505">
-          <caret line="167" selection-start-line="167" selection-end-line="167" />
+        <state relative-caret-position="210">
+          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
           <folding>
             <element signature="e#892#914#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ft_main_hash_function.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ft_parse_and_read.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ft_parse_and_read.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ft_sha.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+          <folding>
+            <element signature="e#928#956#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ft_md5.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="19" lean-forward="true" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="133" column="32" lean-forward="true" selection-start-line="133" selection-start-column="32" selection-end-line="133" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ft_init_structs.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#892#911#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ft_add_flags1.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
+        <state relative-caret-position="240">
+          <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+          <folding>
+            <element signature="e#892#914#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ft_flags_operations.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ft_print_functions.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/print_error.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Makefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+        <state relative-caret-position="465">
+          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/print_error.c">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ft_init_structs.c">
+    <entry file="file://$PROJECT_DIR$/src/ft_crypt_operations.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="20" column="20" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        <state relative-caret-position="210">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/global/Makefile">
+    <entry file="file://$PROJECT_DIR$/src/ft_global.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="81" column="29" selection-start-line="81" selection-start-column="29" selection-end-line="81" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ft_add_flags2.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
+          <folding>
+            <element signature="e#892#914#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ft_des3.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ft_print_show_des.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#892#911#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hash_src/main.c">
+    <entry file="file://$PROJECT_DIR$/src/Makefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+        <state relative-caret-position="600">
+          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ft_des.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="87" column="25" selection-start-line="87" selection-start-column="25" selection-end-line="87" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ft_base64.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="42" column="2" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ft_base64_decrypt_operations.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+          <folding>
+            <element signature="e#892#914#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ft_read_text.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="622">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ft_crypt_operations.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="e#892#914#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ft_des.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ft_des_operations.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>

@@ -11,8 +11,8 @@
 /* ************************************************************************** */
 
 #include "ft_global.h"
-#include "../crypt_src/ft_base64.h"
-#include "../crypt_src/ft_des.h"
+#include "ft_base64.h"
+#include "ft_des.h"
 
 const t_uint g_sha_word[64] =
 {

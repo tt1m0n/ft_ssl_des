@@ -13,7 +13,7 @@
 #ifndef FT_MD5_H
 # define FT_MD5_H
 
-# include "../global/ft_global.h"
+# include "ft_global.h"
 
 # define F(x, y, z) ((z) ^ ((x) & ((y) ^ (z))))
 # define G(x, y, z) ((y) ^ ((z) & ((x) ^ (y))))

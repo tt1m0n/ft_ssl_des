@@ -14,7 +14,7 @@
 # define FT_SHA_H
 
 # include "../libft/libft.h"
-# include "../global/ft_global.h"
+# include "ft_global.h"
 
 # define RR_32(x, n) (((x) >> (n)) | ((x) << (32 - (n))))
 # define RR_64(x, n) (((x) >> (n)) | ((x) << (64 - (n))))

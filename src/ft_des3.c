@@ -28,7 +28,7 @@ void			des3_crypt(t_crypt_info *crypt_info)
 	crypt = read_crypt_text(crypt_info);
 	if (crypt && crypt_info->flags.d && crypt_info->flags.a)
 	{
-		temp = base64_decrypt_alghoritm(crypt, crypt_info->data_len);
+		temp = base64_decrypt_alghoritm(crypt);
 		free(crypt);
 		crypt = temp;
 	}

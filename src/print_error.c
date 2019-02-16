@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../hash_src/ft_parse_and_read.h"
+#include "ft_parse_and_read.h"
 
 int			print_error(t_hash_ptr hash_type,\
 						t_error_type error_type, char *filename)

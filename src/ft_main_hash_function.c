@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../global/ft_global.h"
+#include "ft_global.h"
 #include "ft_md5.h"
 #include "ft_sha.h"
 #include "ft_parse_and_read.h"

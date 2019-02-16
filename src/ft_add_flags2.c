@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../global/ft_global.h"
+#include "ft_global.h"
 #include "ft_crypt_operations.h"
 #include "ft_des.h"
 
@@ -32,7 +32,7 @@ int		add_p_flag(char ***argv, t_crypt_info *info)
 {
 	info->flags.p = 1;
 	(*argv)++;
-	info->flags.password = (unsigned char*)**argv;
+	info->flags.password = **argv;
 	if (!info->flags.password)
 	{
 		ft_printf("missing source argument for -p\n\n");

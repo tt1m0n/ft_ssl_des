@@ -13,10 +13,10 @@
 #include "ft_md5.h"
 #include "ft_sha.h"
 #include "ft_parse_and_read.h"
-#include "../crypt_src/ft_base64.h"
-#include "../global/ft_global.h"
-#include "../crypt_src/ft_crypt_operations.h"
-#include "../crypt_src/ft_flags_operations.h"
+#include "ft_base64.h"
+#include "ft_global.h"
+#include "ft_crypt_operations.h"
+#include "ft_flags_operations.h"
 
 void		zero_crypt_info_struct(t_crypt_info *crypt_info)
 {

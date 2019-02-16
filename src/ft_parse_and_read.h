@@ -13,7 +13,7 @@
 #ifndef FT_PARSE_AND_READ_H
 # define FT_PARSE_AND_READ_H
 
-# include "../global/ft_global.h"
+# include "ft_global.h"
 
 /*
 ** parse

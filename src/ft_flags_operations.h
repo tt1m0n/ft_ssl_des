@@ -13,7 +13,7 @@
 #ifndef FT_FLAGS_OPERATIONS_H
 # define FT_FLAGS_OPERATIONS_H
 
-# include "../global/ft_global.h"
+# include "ft_global.h"
 
 void		zero_crypt_flags(t_crypt_flags *flags);
 int			add_flag_to_base_struct(char ***argv, t_crypt_info *info);

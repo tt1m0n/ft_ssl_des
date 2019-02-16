@@ -13,7 +13,7 @@
 #ifndef FT_CRYPT_OPERATIONS_H
 # define FT_CRYPT_OPERATIONS_H
 
-# include "../global/ft_global.h"
+# include "ft_global.h"
 
 int				print_crypt_flags_usage(char *argument,
 									t_crypt_type crypt_type);

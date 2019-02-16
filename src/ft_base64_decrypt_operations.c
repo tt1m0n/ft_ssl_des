@@ -18,7 +18,7 @@ void			base64_decrypt_operations(unsigned char *decrypt_text,
 {
 	unsigned char *result;
 
-	result = base64_decrypt_alghoritm(decrypt_text, crypt_info->data_len);
+	result = base64_decrypt_alghoritm(decrypt_text);
 	if (result)
 	{
 		base64_result_output(result, crypt_info, ft_strlen((char *)result));
@@ -26,8 +26,7 @@ void			base64_decrypt_operations(unsigned char *decrypt_text,
 	}
 }
 
-unsigned char	*base64_decrypt_alghoritm(unsigned char *decrypt_text,
-												unsigned int data_len)
+unsigned char	*base64_decrypt_alghoritm(unsigned char *decrypt_text)
 {
 	unsigned int	newlen;
 	unsigned int	i;

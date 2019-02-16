@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../global/ft_global.h"
+#include "ft_global.h"
 #include "ft_parse_and_read.h"
 
 void	common_hash_parse(int *flags, char *need_hash, char *filename)
