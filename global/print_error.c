@@ -24,6 +24,7 @@ int			print_error(t_hash_ptr hash_type,\
 		ft_printf("Message Digest commands:\n");
 		ft_printf("md5\nsha224\nsha256\nsha384\nsha512\n\n");
 		ft_printf("Cipher commands:\nbase64\ndes\ndes-ecb\ndes-cbc\n");
+		ft_printf("des3\ndes3-ecb\ndes3-cbc\n\n");
 	}
 	return (1);
 }

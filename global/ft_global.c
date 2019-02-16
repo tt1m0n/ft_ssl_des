@@ -75,16 +75,19 @@ char *g_hash_name[6] =
 	0
 };
 
-char *g_crypt_name[5] =
+char *g_crypt_name[8] =
 {
 	"base64",
 	"des",
 	"des-ecb",
 	"des-cbc",
+	"des3",
+	"des3-ecb",
+	"des3-cbc",
 	0
 };
 
-char *g_des_flag_name[10] =
+char *g_des_flag_name[11] =
 {
 	"-a",
 	"-d",
@@ -95,6 +98,7 @@ char *g_des_flag_name[10] =
 	"-p",
 	"-s",
 	"-v",
+	"-show",
 	0
 };
 
@@ -107,7 +111,7 @@ char *g_base_flag_name[5] =
 	0
 };
 
-const t_add_flag_ptr g_add_flag_des_functions[10] =
+const t_add_flag_ptr g_add_flag_des_functions[11] =
 {
 	add_a_flag,
 	add_d_flag,
@@ -118,6 +122,7 @@ const t_add_flag_ptr g_add_flag_des_functions[10] =
 	add_p_flag,
 	add_s_flag,
 	add_v_flag,
+	add_show_flag,
 	0
 };
 
@@ -135,9 +140,9 @@ const t_hash_ptr g_hash_function[6] =
 	md5, sha224, sha256, sha384, sha512, 0
 };
 
-const t_crypt_ptr g_crypt_function[5] =
+const t_crypt_ptr g_crypt_function[8] =
 {
-	base64, des, des_ecb, des_cbc, 0
+	base64, des, des_ecb, des_cbc, des3, des3_ecb, des3_cbc, 0
 };
 
 char		*take_text_from_output(int fd)

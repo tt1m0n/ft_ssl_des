@@ -28,6 +28,7 @@ unsigned char	*take_crypt_text_from_output(int fd, t_crypt_info *crypt_info)
 	char			*need_to_crypt;
 	char			tmp_buffer[BUFFER_SIZE + 1];
 	unsigned int    ret_len;
+	char 			*tmp;
 
 	ft_bzero(tmp_buffer, sizeof(char) * BUFFER_SIZE + 1);
 	need_to_crypt = ft_strnew(0);
@@ -40,5 +41,13 @@ unsigned char	*take_crypt_text_from_output(int fd, t_crypt_info *crypt_info)
 	}
 	if (fd)
 		close(fd);
+	if(!ft_memcmp("Salted__", need_to_crypt, 8) && crypt_info->data_len > 16)
+	{
+		crypt_info->data_len -= 16;
+		tmp = need_to_crypt;
+		need_to_crypt = ft_strnew(crypt_info->data_len);
+		ft_memcpy(need_to_crypt, &tmp[16], crypt_info->data_len);
+		free(tmp);
+	}
 	return ((unsigned char*)need_to_crypt);
 }

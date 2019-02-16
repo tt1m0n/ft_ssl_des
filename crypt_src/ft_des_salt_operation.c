@@ -10,6 +10,7 @@ void	get_random_salt(t_crypt_info *crypt_info)
 	if (fd == -1)
 		ft_printf("error to open random /dev/urandom file\n");
 	read(fd, salt, 8);
+	crypt_info->flags.s = 1;
 	crypt_info->flags.salt = ft_memalloc(9);
 	ft_memcpy(crypt_info->flags.salt, salt, 8);
 }

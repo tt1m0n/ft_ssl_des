@@ -104,3 +104,16 @@ unsigned char	*des_get_subkey(unsigned char *key)
 	sub[5] += R48(3, 8, 2) + GETKY(3, 1);
 	return (sub);
 }
+
+unsigned char	**init_des3_keys(unsigned char *key)
+{
+	unsigned char	**keys;
+
+	keys = (unsigned char **)malloc(sizeof(unsigned char *) * 3);
+	if (!keys)
+		return (NULL);
+	keys[0] = des_key_reduction(key, -1);
+	keys[1] = des_key_reduction(key + 8, -1);
+	keys[2] = des_key_reduction(key + 16, -1);
+	return (keys);
+}

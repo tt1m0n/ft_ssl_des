@@ -126,6 +126,12 @@
 		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_des.h">
 			<Option target="ft_ssl"/>
 		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_des3.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_des3_operations.c">
+			<Option target="ft_ssl"/>
+		</Unit>
 		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_des_align_input.c">
 			<Option target="ft_ssl"/>
 		</Unit>
@@ -138,10 +144,16 @@
 		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_des_common_block_operation.c">
 			<Option target="ft_ssl"/>
 		</Unit>
-		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_des_key_operation.c">
+		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_des_key_operations.c">
 			<Option target="ft_ssl"/>
 		</Unit>
 		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_des_key_operations1.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_des_key_operations2.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_des_key_operations3.c">
 			<Option target="ft_ssl"/>
 		</Unit>
 		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_des_operations.c">
@@ -172,6 +184,9 @@
 			<Option target="ft_ssl"/>
 		</Unit>
 		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_print_functions.c">
+			<Option target="ft_ssl"/>
+		</Unit>
+		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_print_show_des.c">
 			<Option target="ft_ssl"/>
 		</Unit>
 		<Unit filename="/Users/omakovsk/Documents/ft_ssl/crypt_src/ft_read_text.c">

@@ -18,12 +18,12 @@
 #include "../crypt_src/ft_crypt_operations.h"
 #include "../crypt_src/ft_flags_operations.h"
 
-void    zero_crypt_info_struct(t_crypt_info *crypt_info)
+void		zero_crypt_info_struct(t_crypt_info *crypt_info)
 {
-    crypt_info->crypt_type = unknown_type;
-    crypt_info->cryptptr = 0;
-    zero_crypt_flags(&crypt_info->flags);
-    crypt_info->data_len = 0;
+	crypt_info->crypt_type = unknown_type;
+	crypt_info->cryptptr = 0;
+	zero_crypt_flags(&crypt_info->flags);
+	crypt_info->data_len = 0;
 }
 
 t_hash_ptr	find_hash_type(char *hash)
@@ -71,7 +71,7 @@ int			hash_info_operations(char **argv, t_hash_info *hash_info)
 
 int			main(int argc, char **argv)
 {
-	t_hash_info 	hash_info;
+	t_hash_info		hash_info;
 	t_crypt_info	crypt_info;
 
 	hash_info.flags = 0;
@@ -86,9 +86,10 @@ int			main(int argc, char **argv)
 			!(crypt_info.cryptptr = find_crypt_type(argv[1])))
 			return (print_error(0, error_command, *argv));
 		if (hash_info.hashptr)
-			return hash_info_operations(argv + 2, &hash_info);
+			return (hash_info_operations(argv + 2, &hash_info));
 		else if (crypt_info.cryptptr)
 			crypt_info_operations(argv + 2, &crypt_info);
+		system("leaks ft_ssl");
 	}
 	return (0);
 }

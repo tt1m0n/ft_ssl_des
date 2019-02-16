@@ -67,3 +67,10 @@ int		add_v_flag(char ***argv, t_crypt_info *info)
 	}
 	return (1);
 }
+
+int 	add_show_flag(char ***argv, t_crypt_info *info)
+{
+	(void)argv;
+	info->flags.show = 1;
+	return (1);
+}

@@ -3,7 +3,7 @@
 
 #include "../global/ft_global.h"
 
-#define DES_KEY_LEN 8
+#define DES_KEY_LEN 24
 #define DES_IV_VECTOR_LEN 8
 
 /*
@@ -13,6 +13,13 @@ void				des(t_crypt_info *crypt_info);
 void				des_ecb(t_crypt_info *crypt_info);
 void				des_cbc(t_crypt_info *crypt_info);
 void				des_operations(t_crypt_info *crypt_info);
+
+/*
+** ft_des3_operations.c
+*/
+void				des3(t_crypt_info *crypt_info);
+void				des3_ecb(t_crypt_info *crypt_info);
+void				des3_cbc(t_crypt_info *crypt_info);
 
 /*
 ** ft_des_validate_key.c
@@ -30,8 +37,17 @@ void 				des_crypt(t_crypt_info *crypt_info);
 void				des_message(t_crypt_info *crypt_info,
 									unsigned char **text);
 void				des_action(t_crypt_info *crypt_info,
-									unsigned char *crypt);
+				   					unsigned char *crypt_text, uint8_t is_des3);
 
+/*
+** ft_des3.c
+*/
+void				des3_crypt(t_crypt_info *crypt_info);
+void				des3_message(t_crypt_info *crypt_info,
+									unsigned char **text);
+void				destroy_des3_keys(unsigned char **keys);
+unsigned char		*des3_common_block(unsigned char *block,
+									   unsigned char **keys, int d);
 /*
 ** ft_des_align_input.c
 */
@@ -50,12 +66,21 @@ void				des_cbc_result_output(t_crypt_info *crypt_info,
 void    			write_des_to_file(unsigned char *result, t_crypt_info *crypt_info);
 
 /*
+** ft_print_show_des.c
+*/
+void				ft_print_show(t_crypt_info *crypt_info);
+void				ft_print_hex(t_crypt_info *crypt_info,
+									unsigned char *str, int len);
+
+
+/*
 ** ft_des_key_operation.c
 */
 unsigned char		*des_key_reduction(unsigned char *key, int it);
 void				des_key_r_rotation(unsigned char *key, int num);
 void				des_key_l_rotation(unsigned char *key, int num);
 unsigned char		*des_get_subkey(unsigned char *key);
+unsigned char		**init_des3_keys(unsigned char *key);
 
 
 /*
@@ -129,11 +154,19 @@ void				get_key_after_salt(t_crypt_info *crypt_info);
 void				get_crypt_key(t_crypt_info *crypt_info);
 unsigned long long	*password_hash(t_crypt_info *crypt_info);
 void				pad_pass_salt(t_crypt_info *crypt_info);
+
+/*
+** ft_des_key_operations2.c
+*/
 void				add_byte(t_crypt_info *crypt_info);
 void				block_end(t_crypt_info *crypt_info);
 unsigned long long	*hash_pass(t_crypt_info *crypt_info);
 void				init_key_help(t_key_help *key_help);
 void				init_iter(t_iter *iter, t_key_help *key_help);
+
+/*
+** ft_des_key_operations3.c
+*/
 void				whilesalt(t_iter *z, t_crypt_info *crypt_info, size_t ctr);
 unsigned long long	*handle_pass(t_key_help new);
 void				revert_eight_bytes(char *data, size_t len);

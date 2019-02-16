@@ -19,6 +19,7 @@ void		zero_crypt_flags(t_crypt_flags *flags)
 	flags->salt = NULL;
 	flags->v = 0;
 	flags->in_vector = NULL;
+	flags->show = 0;
 }
 
 int 		add_flag_to_base_struct(char ***argv, t_crypt_info *info)
